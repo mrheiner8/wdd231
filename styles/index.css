@@ -1,0 +1,72 @@
+/* --- 1. RESET & VARIABLES ---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgba(0 110 182 / 1);
+    --nav-color: rgba(238, 240, 111, 0.911);
+    --nav-text-color: #fff;
+    --font-color: #333333;
+    --background-color: #f4f4f4;
+    --heading-font: 'Acme', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --box-shadow: 0 0 15px #808080;
+}
+
+/* --- 2. GLOBAL STYLES --- */
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+/* --- 3. LAYOUT STRUCTURE --- */
+header, footer {
+    font-family: var(--heading-font);
+}
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0px 5px 5px;
+    column-gap: 8px;
+    border-bottom: solid 1px #ddd;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;  
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* --- 4. NAVIGATION & HAMBURGER --- */
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+.ham
+
+/* --- 5. IMAGES & FIGURES --- */
