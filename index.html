@@ -1,30 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Michael Ray Heiner | WDD231</title>
-<meta name="description"content="Description of page. Using key words">
-<meta name="author" content="Michael Heiner">
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/index.css">
-<link rel="stylesheet" href="styles/index-large.css">
-<script src="scripts/getdates.js" defer></script>
-<script src="scripts/index.js" defer></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Ray Heiner | WDD231</title>
+    <meta name="description" content="Description of page. Using key words">
+    <meta name="author" content="Michael Heiner">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<header>
-    <img src="images/desktop-wallpaper.svg" alt="site logo" width="1" height="1">
-    <span>Michael Ray Heiner</span>
-    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
-</header>
-<nav></nav>
-<main></main>
-<footer><p>©<span id="currentYear"></span> | Michael Heiner | Colorado <br> Last Modification: <span id="lastModified"></span></p></footer>
+    <header>
+        <img src="images/desktop-wallpaper.svg" alt="site logo" width="1" height="1">
+        <span>Michael Ray Heiner</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! My name is Michael Heiner, based in Colorado Springs. I have a background in running a tech service shop and currently work as an IT Support Technician for a local school district. I am working toward my Software Development degree to expand my programming skills. When I step away from the keyboard, my world revolves around my wife, Alyssa, and our two boys. Whether we are building busting bricks in Lego Avengers, exploring the zoo, or visiting Disney, my family is my greatest motivation for advancing my education.</p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <img src="#" alt="Picture of Michael Heiner">
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <ul id="course-list"></ul>
+        </section>
+    </main>
+    <footer>
+
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/michael.heiner.35" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook Icon" width="16" height="16">
+            </a>
+            <a href="https://github.com/mrheiner8" target="_blank">
+                <img src="images/github.svg" alt="Github Icon" width="16" height="16">
+            </a>
+            <a href="https://www.instagram.com/michaelblueray/" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram Icon" width="16" height="16">
+            </a>
+            <a href="www.linkedin.com/in/michael-heiner-b64212a0" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon" width="16" height="16">
+            </a>
+            <a href="mheiner@byupathway.edu" target="_blank">
+                <img src="images/microsoft-teams.svg" alt="Microsoft-Teams Icon" width="16" height="16">
+            </a>
+        </nav>
+
+        <div>
+            <p>©<span id="currentYear"></span> | Michael Heiner | Colorado, USA</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
 </body>
+
 </html>

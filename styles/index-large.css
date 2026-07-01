@@ -9,6 +9,22 @@
         grid-template-columns: 24px auto;
     }
 
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+    }
+    
+    .navigation a{
+        border: none;
+    }
+    
     .hamburger{
         display: none;
     }
