@@ -111,12 +111,15 @@ function displayCourses(filteredCourses) {
             <p>Certificate: ${course.certificate}</p>
             <p>Description: ${course.description}</p>
             <p>Technology: ${course.technology}</p>
-            <p>Completed: ${course.completed}</p>
             `;
         mainElement.appendChild(card);
+        if (course.completed) {
+            card.classList.add("completed-course");
+        }
     });
+
 }
 
 displayCourses(courses);
-   
+
 

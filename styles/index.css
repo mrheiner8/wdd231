@@ -11,23 +11,33 @@
     --nav-text-color: #fff;
     --font-color: #333333;
     --background-color: #f4f4f4;
-    --heading-font: 'Acme', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
+    --site-font: 'Acme', sans-serif;
     --box-shadow: 0 0 15px #808080;
 }
 
 /* --- 2. GLOBAL STYLES --- */
 body {
-    font-family: var(--paragraph-font);
+    font-family: var(--site-font);
     background-color: var(--background-color);
     color: var(--font-color);
     box-shadow: var(--box-shadow);
 }
 
+section, h2, p, #course-list a, figure{
+    padding: 5px;
+    margin: 8px;
+}
+
+section, .profile, #course-list a, figure{
+    background-color: #f3f3f3;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+
 /* --- 3. LAYOUT STRUCTURE --- */
 header,
 footer {
-    font-family: var(--heading-font);
+    font-family: var(--site-font);
 }
 
 header {
@@ -54,6 +64,32 @@ header span {
 
 h1 {
     margin-left: 10px;
+}
+
+h2{
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+}
+
+/* ---Web and Computer Programming Certificate--- */
+
+#course-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    column-gap: 8px;
+    
+}
+
+#course-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    border: var(--nav-color) solid 1px;
+    text-decoration: none;
+    color: var(--font-color);
 }
 
 /* --- Footer--- */
@@ -111,7 +147,7 @@ footer {
 .navigation {
     display: none;
     background-color: var(--main-color);
-    font-family: var(--heading-font);
+    font-family: var(--site-font);
     color: var(--nav-color);
 }
 .navigation.show {
@@ -146,3 +182,7 @@ footer {
 
 
 /* --- 6. IMAGES & FIGURES --- */
+.profile{
+    width: 96%;
+    margin: 10px 10px;
+}
