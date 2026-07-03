@@ -1,11 +1,14 @@
 @media only screen and (min-width: 38rem) {
 
-    header, main, nav, footer{
+    header,
+    main,
+    nav,
+    footer {
         max-width: 900px;
         margin: 0 auto;
-    } 
+    }
 
-    header{
+    header {
         grid-template-columns: 24px auto;
     }
 
@@ -13,20 +16,29 @@
         display: block;
     }
 
-    .navigation ul{
+    .navigation ul {
         display: flex;
     }
 
     .navigation li {
         flex: 1 1 100%;
     }
-    
-    .navigation a{
+
+    .navigation a {
         border: none;
     }
-    
-    .hamburger{
+
+    .hamburger {
         display: none;
     }
-    
+
+    main {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        column-gap: 8px;
+    }
+
+    .
 }
