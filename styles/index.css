@@ -75,7 +75,7 @@ header img {
 }
 
 header span {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: var(--main-color);
     font-weight: bold;
 }
@@ -187,10 +187,10 @@ h2 {
     text-decoration: underline;
 }
 
-.completed-course h2::after {
+.completed-course h2::before {
     content: " \2714";
     color: var(--nav-color);
-    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* --- Footer--- */
@@ -231,5 +231,6 @@ footer {
 .profile {
     display: block;
     max-width: 100%;
+    height: auto;
 
 }

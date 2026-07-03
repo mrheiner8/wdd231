@@ -4,7 +4,7 @@
     main,
     nav,
     footer {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -32,13 +32,19 @@
         display: none;
     }
 
-    main {
+    .hero {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    #card-container {
         list-style-type: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        column-gap: 8px;
+        column-gap: 10px;
     }
-
-    .
 }
