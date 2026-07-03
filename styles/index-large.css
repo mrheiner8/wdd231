@@ -33,7 +33,6 @@
     }
 
     .hero {
-        list-style-type: none;
         display: grid;
         grid-template-columns: 2fr 1fr;
         justify-content: center;
@@ -41,7 +40,6 @@
     }
 
     #card-container {
-        list-style-type: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;

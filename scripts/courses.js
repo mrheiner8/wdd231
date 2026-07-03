@@ -85,15 +85,18 @@ const courses = [
     }
 ]
 
-wddLink.addEventListener("click", () => {
+wddLink.addEventListener("click", (e) => {
+    e.preventDefault();
     const wdd = courses.filter(course => course.subject === 'WDD')
     displayCourses(wdd)
 });
-cseLink.addEventListener("click", () => {
+cseLink.addEventListener("click", (e) => {
+    e.preventDefault();
     const cse = courses.filter(course => course.subject === 'CSE')
     displayCourses(cse);
 });
-allLink.addEventListener("click", () => {
+allLink.addEventListener("click", (e) => {
+    e.preventDefault();
     const all = courses
     displayCourses(all);
 });
@@ -121,5 +124,3 @@ function displayCourses(filteredCourses) {
 }
 
 displayCourses(courses);
-
-
