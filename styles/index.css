@@ -130,7 +130,6 @@ h2 {
 
 .navigation a {
     display: block;
-    padding: .8rem 10px;
     color: var(--nav-color);
     text-align: center;
     padding: 1rem;
