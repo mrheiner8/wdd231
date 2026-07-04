@@ -44,5 +44,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         column-gap: 10px;
+        min-height: 400px;
     }
 }
