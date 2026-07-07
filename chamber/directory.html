@@ -1,22 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WDD231 Directory</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorado Springs Chamber of Commerce | Directory | WDD231</title>
+    <meta name="description"
+        content="chamber of commerce web site for the city of Colorado Springs Colorado. HTML, CSS, JavaScript, Json">
+    <meta name="author" content="Michael Heiner">
+    <meta property="og:title" content="Colorado Springs Chamber of Commerce | Directory | WDD231">
+    <meta property="og:description"
+        content="Chamber of commerce web site for the city of Colorado Springs Colorado. HTML, CSS, JavaScript, Json">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="https://mrheiner8.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 
-<meta name="description"content="Description of page. Using key words">
-
-<meta name="author" content="Michael Heiner">
-
-<link rel="stylesheet" href="styles/filename">
-
-<script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-<header><h1>Page Title - Heading 1</h1></header>
-<nav></nav>
-<main></main>
-<footer><p>©<span id="currentYear"></span> | Michael Heiner | Colorado <br> Last Modification: <span id="lastModified"></span></p></footer>
+    <header>
+        <img src="images/desktop-wallpaper.svg" alt="site logo" width="1" height="1">
+        <span>Colorado Springs Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <button id="dark" class="" aria-label="">#</button>
+    <main>
+        <h1>Directory</h1>
+        <button id="grid-button" class="" aria-label="">Grid</button>
+        <button id="list-button" class="" aria-label="">List</button>
+        <div id="members"></div>
+    </main>
+    <footer>
+        <div>
+            <p>Colorado Springs Chamber of Commerce<br>102 South Tejon Street<br>Colorado Springs, CO
+                80903<br>info@coscoc.org<br>719.555.1234</p>
+        </div>
+
+        <nav class="socialmedia">
+            <a href="#" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook Icon" width="16" height="16">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram Icon" width="16" height="16">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon" width="16" height="16">
+            </a>
+        </nav>
+
+        <div>
+            <p>WDD231 Class Project<br>Michael Heiner<br>© <span id="currentYear"></span> Colorado Springs Chamber of
+                Commerce<br>Last Modification: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
 </body>
+
 </html>
