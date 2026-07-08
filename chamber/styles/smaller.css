@@ -1,0 +1,75 @@
+/* --- 1. RESET & VARIABLES ---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #006EB6;
+    --nav-color: #F2F495;
+    --nav-text-color: #fff;
+    --font-color: #333333;
+    --background-color: #f4f4f4;
+    --site-font: 'Acme', sans-serif;
+    --box-shadow: 0 0 15px #808080;
+}
+
+/* --- 2. GLOBAL STYLES --- */
+body {
+    font-family: var(--site-font);
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+section {
+    padding: 15px;
+    margin: 8px;
+    background-color: #f3f3f3;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    text-align: center;
+    /* Centers the text and images inside the cards */
+}
+
+h2,
+p {
+    padding: 5px;
+    margin: 8px 0;
+}
+
+/* --- 3. LAYOUT STRUCTURE --- */
+header,
+footer {
+    font-family: var(--site-font);
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+h2 {
+    align-content: center;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+
+#cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 1rem;
+}
+
+/* Card Images */
+section img {
+    width: 100%;
+    max-width: 340px;
+    /* Prevents the image from getting larger than its native size */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
