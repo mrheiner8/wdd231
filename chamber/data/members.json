@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "company": "Pikes Peak Roasters",
+            "address": "123 Tejon St, Colorado Springs, CO 80903",
+            "phone": "719-555-0101",
+            "level": 3,
+            "imagefile": "pikes-peak-roasters.webp",
+            "years": 12,
+            "url": "https://www.google.com/search?q=pikespeakroasters.com"
+        },
+        {
+            "company": "Garden of the Gods Gear",
+            "address": "456 Colorado Ave, Colorado Springs, CO 80904",
+            "phone": "719-555-0202",
+            "level": 2,
+            "imagefile": "gotg-gear.webp",
+            "years": 8,
+            "url": "https://www.google.com/search?q=gotggear.com"
+        },
+        {
+            "company": "Cheyenne Mountain Tech",
+            "address": "789 Broadmoor Bluffs Dr, Colorado Springs, CO 80906",
+            "phone": "719-555-0303",
+            "level": 1,
+            "imagefile": "cm-tech.webp",
+            "years": 3,
+            "url": "https://www.google.com/search?q=cheyennemttech.com"
+        },
+        {
+            "company": "Red Rock Restorations",
+            "address": "321 Nevada Ave, Colorado Springs, CO 80903",
+            "phone": "719-555-0404",
+            "level": 2,
+            "imagefile": "red-rock-auto.webp",
+            "years": 15,
+            "url": "https://www.redrockauto.com"
+        },
+        {
+            "company": "Springs Web Solutions",
+            "address": "555 Academy Blvd, Colorado Springs, CO 80920",
+            "phone": "719-555-0505",
+            "level": 3,
+            "imagefile": "springs-web.webp",
+            "years": 5,
+            "url": "https://www.google.com/search?q=springsweb.com"
+        },
+        {
+            "company": "Alpine Legal Group",
+            "address": "777 Cascade Ave, Colorado Springs, CO 80903",
+            "phone": "719-555-0606",
+            "level": 1,
+            "imagefile": "alpine-legal.webp",
+            "years": 22,
+            "url": "https://www.google.com/search?q=alpinelegal.com"
+        },
+        {
+            "company": "Monument Valley Landscaping",
+            "address": "888 Woodmen Rd, Colorado Springs, CO 80919",
+            "phone": "719-555-0707",
+            "level": 2,
+            "imagefile": "monument-landscaping.webp",
+            "years": 7,
+            "url": "https://www.monumentlandscape.com"
+        }
+    ]
+}
