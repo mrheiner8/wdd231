@@ -1,4 +1,4 @@
-const url = 'https://mrheiner8.github.io/wdd231/chamber/data/members.json';
+const url = 'data/members.json';
 const membersContainer = document.querySelector('#members');
 
 async function getMembersData() {
@@ -19,7 +19,7 @@ const displayMembers = (members) => {
         let picture = document.createElement("img");
     
         companyName.textContent = `${member.company}`;
-        years.textContent = `${member.years} in business`;
+        years.textContent = `${member.years} Years of Business in Colorado Springs`;
         location.textContent = `Address: ${member.address}`;
         pNumber.textContent = `Phone Number: ${member.phone}`;
         site.textContent = `${member.url}`;
