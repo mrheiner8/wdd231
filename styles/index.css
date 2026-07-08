@@ -91,6 +91,10 @@ h2 {
     color: var(--nav-text-color);
 }
 
+.about-me p {
+    font-size: 1.3rem;
+}
+
 /* --- 4. NAVIGATION & HAMBURGER --- */
 
 .hamburger {
@@ -116,6 +120,7 @@ h2 {
     background-color: var(--main-color);
     font-family: var(--site-font);
     color: var(--nav-color);
+    font-size: 1.6rem;
 }
 
 .navigation.show {
@@ -232,5 +237,5 @@ footer {
     width: 100%;
     max-width: 100%;
     height: auto;
-    aspect-ratio: 3/2;
+    aspect-ratio: 4/5;
 }
