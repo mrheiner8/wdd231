@@ -6,13 +6,15 @@
 }
 
 :root {
-    --main-color: #006EB6;
-    --nav-color: #F2F495;
+    --main-color: #2455da;
+    --nav-color: #7bdd6e;
     --nav-text-color: #fff;
     --font-color: #333333;
     --background-color: #f4f4f4;
+    --gold-border: #F0E68C;
+    --silver-border: #D3D3D3;
     --site-font: 'Acme', sans-serif;
-    --box-shadow: 0 0 15px #808080;
+    --box-shadow: 0 0 10px #808080;
 }
 
 /* --- 2. GLOBAL STYLES --- */
@@ -57,7 +59,7 @@ h2 {
     border-radius: 5px;
 }
 
-#cards {
+#members {
     display: grid;
     grid-gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
