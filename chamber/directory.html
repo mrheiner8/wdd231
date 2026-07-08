@@ -19,7 +19,7 @@
     <link rel="icon" href="favicon.ico">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/navigation.js"></script>
+    <script src="scripts/navigation.js" defer></script>
 
 </head>
 
@@ -40,9 +40,11 @@
     </nav>
     <main>
         <h1>Directory</h1>
-        <button id="grid-button" class="" aria-label="">Grid</button>
-        <button id="list-button" class="" aria-label="">List</button>
-        <div id="members"></div>
+        <div id="grid-buttons">
+        <button id="grid" class="" aria-label="">Grid</button>
+        <button id="list" class="" aria-label="">List</button>
+        </div>
+        <div id="members" class="grid"></div>
     </main>
     <footer>
         <div>
