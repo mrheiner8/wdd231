@@ -50,9 +50,13 @@ footer {
     text-align: center;
 }
 
+footer {
+    margin-top: 1rem;
+}
+
 header {
     display: grid;
-    grid-template-columns: 54px auto 44px 44px;
+    grid-template-columns: 54px auto 44px;
     align-items: end;
     padding: 5px 0px 5px 10px;
     column-gap: 8px;
@@ -76,7 +80,7 @@ header span {
 .hamburger {
     background: none;
     border: none;
-    color: var(--main-color);
+    color: var(--nav-text-color-color);
     cursor: pointer;
 }
 
@@ -131,14 +135,28 @@ h1 {
     margin-left: 10px;
 }
 
-#grid-buttons{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.grid-buttons {
+    margin: 1rem auto;
+    padding: 0.5rem;
     background-color: var(--main-color);
     font-family: var(--site-font);
-    color: var(--nav-color);
-    font-size: 1.6rem;
+    text-align: center;
 
+    button {
+        margin: 0px 5px;
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem;
+        background-color: var(--background-color);
+        font-family: var(--site-font);
+        color: var(--font-color);
+        border: solid 1px;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+    }
+}
+
+.grid-buttons button:hover {
+    background-color: var(--nav-color);
 }
 
 .grid {
@@ -148,13 +166,13 @@ h1 {
     padding: 1rem;
 
     h2 {
-            align-content: center;
-            text-align: center;
-            background-color: var(--main-color);
-            color: var(--nav-text-color);
-            box-shadow: var(--box-shadow);
-            border-radius: 5px;
-        }
+        align-content: center;
+        text-align: center;
+        background-color: var(--main-color);
+        color: var(--nav-text-color);
+        box-shadow: var(--box-shadow);
+        border-radius: 5px;
+    }
 }
 
 .list {
@@ -168,21 +186,24 @@ h1 {
         padding: 0.25rem;
         box-shadow: none;
         border-radius: 0px;
-        
-        & > *{
+
+        &>* {
             margin: 0 1rem;
         }
-        img{
+
+        img {
             display: none;
         }
-        h2{
+
+        h2 {
             font-size: 1rem;
             color: var(--font-color);
             background-color: none;
             box-shadow: none;
             border-radius: none;
         }
-        &:nth-child(odd){
+
+        &:nth-child(odd) {
             background-color: #bbb;
         }
     }
