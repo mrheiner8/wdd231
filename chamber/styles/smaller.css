@@ -13,7 +13,7 @@
     --background-color: #f4f4f4;
     --gold-border: #F0E68C;
     --silver-border: #D3D3D3;
-    --site-font: 'Acme', sans-serif;
+    --site-font: 'Teachers', sans-serif;
     --box-shadow: 0 0 10px #808080;
 }
 
@@ -35,9 +35,10 @@ section {
 }
 
 h2,
-p {
-    padding: 5px;
-    margin: 8px 0;
+p,
+a {
+    padding: 5px 0;
+    margin: 5px 0;
 }
 
 /* --- 3. LAYOUT STRUCTURE --- */
@@ -50,9 +51,6 @@ footer {
     text-align: center;
 }
 
-footer {
-    margin-top: 1rem;
-}
 
 header {
     display: grid;
@@ -61,6 +59,7 @@ header {
     padding: 5px 0px 5px 10px;
     column-gap: 8px;
     border-bottom: solid 1px #ddd;
+    place-items: center;
 }
 
 header img {
@@ -68,20 +67,25 @@ header img {
     width: 100%;
     height: auto;
     padding-bottom: 5px;
+    margin: 10px;
 }
 
+
+
 header span {
+
     font-size: 2rem;
     font-weight: bold;
 }
 
-/* --- 4. NAVIGATION & HAMBURGER --- */
+/* --- HAMBURGER --- */
 
 .hamburger {
     background: none;
     border: none;
-    color: var(--nav-text-color-color);
+    color: var(--nav-text-color);
     cursor: pointer;
+    margin: 10px 10px;
 }
 
 .hamburger::before {
@@ -94,12 +98,11 @@ header span {
     font-size: 2rem;
 }
 
-/* --- 5. NAVIGATION --- */
+/* ---  NAVIGATION --- */
 .navigation {
     display: none;
     background-color: var(--main-color);
     font-family: var(--site-font);
-    color: var(--nav-color);
     font-size: 1.6rem;
 }
 
@@ -115,7 +118,7 @@ header span {
 
 .navigation a {
     display: block;
-    color: var(--nav-color);
+    color: var(--nav-text-color);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -129,10 +132,17 @@ header span {
 
 .navigation li.active {
     text-decoration: underline;
+    color: var(--nav-text-color);
+}
+
+.navigation li.active a:hover {
+    text-decoration: underline;
+    color: var(--font-color);
 }
 
 h1 {
-    margin-left: 10px;
+    margin-left: 13px;
+    padding-left: 7px;
 }
 
 .grid-buttons {
@@ -141,18 +151,24 @@ h1 {
     background-color: var(--main-color);
     font-family: var(--site-font);
     text-align: center;
+}
 
-    button {
-        margin: 0px 5px;
-        padding: 0.5rem 1rem;
-        font-size: 1.6rem;
-        background-color: var(--background-color);
-        font-family: var(--site-font);
-        color: var(--font-color);
-        border: solid 1px;
-        border-radius: 5px;
-        box-shadow: var(--box-shadow);
-    }
+.grid-buttons button {
+    margin: 0px 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    background-color: var(--background-color);
+    font-family: var(--site-font);
+    color: var(--font-color);
+    border: solid 1px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+
+
+}
+
+.grid-buttons button.active {
+    text-decoration: underline;
 }
 
 .grid-buttons button:hover {
@@ -164,50 +180,64 @@ h1 {
     grid-gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding: 1rem;
-
-    h2 {
-        align-content: center;
-        text-align: center;
-        background-color: var(--main-color);
-        color: var(--nav-text-color);
-        box-shadow: var(--box-shadow);
-        border-radius: 5px;
-    }
 }
+
+.grid h2 {
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+
+.grid p,
+.grid a {
+    display: block;
+    text-align: start;
+}
+
+.grid .gold h2 {
+    background-color: var(--gold-border);
+    color: var(--font-color);
+}
+
+.grid .silver h2 {
+    background-color: var(--silver-border);
+    color: var(--font-color);
+}
+
 
 .list {
     display: flex;
     flex-direction: column;
-
-    section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin: 0;
-        padding: 0.25rem;
-        box-shadow: none;
-        border-radius: 0px;
-
-        &>* {
-            margin: 0 1rem;
-        }
-
-        img {
-            display: none;
-        }
-
-        h2 {
-            font-size: 1rem;
-            color: var(--font-color);
-            background-color: none;
-            box-shadow: none;
-            border-radius: none;
-        }
-
-        &:nth-child(odd) {
-            background-color: #bbb;
-        }
-    }
 }
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h2 {
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+.list section:nth-child(odd) {
+    background-color: #bbb;
+}
+
 
 /* Card Images */
 section img {
@@ -217,4 +247,38 @@ section img {
     height: auto;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
+}
+
+/* --- Footer--- */
+footer {
+    margin-top: 1rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.socialmedia a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    box-shadow: var(--box-shadow);
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+}
+
+.socialmedia a:hover {
+    background-color: var(--nav-text-color);
 }

@@ -1,0 +1,42 @@
+@media (min-width: 48rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1650px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 54px auto;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+    
+}

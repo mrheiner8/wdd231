@@ -18,10 +18,19 @@ const displayMembers = (members) => {
         let site = document.createElement("a");
         let picture = document.createElement("img");
 
+        let level = `${member.level}`;
+        if (level == 3) {
+            card.classList.add("gold");
+        } else if (level == 2) {
+            card.classList.add("silver");
+        } else {
+            card.classList.add("member");
+        }
+        
         companyName.textContent = `${member.company}`;
-        years.textContent = `${member.years} Years of Business in Colorado Springs`;
-        location.textContent = `Address: ${member.address}`;
-        pNumber.textContent = `Phone Number: ${member.phone}`;
+        years.innerHTML = `<strong>${member.years} Years of Business in Colorado Springs</strong>`;
+        location.innerHTML = `<strong>Address:</strong> ${member.address}`;
+        pNumber.innerHTML = `<strong>Phone Number:</strong> ${member.phone}`;
         site.textContent = `${member.url}`;
 
         site.setAttribute('href', member.url);
@@ -33,8 +42,8 @@ const displayMembers = (members) => {
         picture.setAttribute('height', '340');
 
         card.appendChild(companyName);
-        card.appendChild(picture);
         card.appendChild(years);
+        card.appendChild(picture);
         card.appendChild(location);
         card.appendChild(pNumber);
         card.appendChild(site);
@@ -46,12 +55,14 @@ const displayMembers = (members) => {
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+// The following code could be written cleaner. How? We may have to simplify our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
     // example using arrow function
     membersContainer.classList.add("grid");
     membersContainer.classList.remove("list");
+    gridbutton.classList.add("active");
+    listbutton.classList.remove("active");
 });
 
 listbutton.addEventListener("click", showList); // example using defined function
@@ -59,4 +70,7 @@ listbutton.addEventListener("click", showList); // example using defined functio
 function showList() {
     membersContainer.classList.add("list");
     membersContainer.classList.remove("grid");
+    listbutton.classList.add("active");
+    gridbutton.classList.remove("active");
 }
+
