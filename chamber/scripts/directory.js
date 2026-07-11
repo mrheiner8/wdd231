@@ -37,7 +37,6 @@ const displayMembers = (members) => {
 
         picture.setAttribute('src', `images/${member.imagefile}`);
         picture.setAttribute('alt', `Picture of ${member.company}`);
-        picture.setAttribute('loading', 'lazy');
         picture.setAttribute('width', '340');
         picture.setAttribute('height', '340');
 
