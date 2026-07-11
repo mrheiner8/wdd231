@@ -246,6 +246,7 @@ section img {
     max-width: 340px;
     /* Prevents the image from getting larger than its native size */
     height: auto;
+    aspect-ratio: 1/1;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
 }
