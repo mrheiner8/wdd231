@@ -167,6 +167,10 @@ h1 {
 
 }
 
+#members {
+    min-height: 578px;
+}
+
 .grid-buttons button.active {
     text-decoration: underline;
 }
