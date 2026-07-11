@@ -32,11 +32,14 @@
         border: none;
     }
 
+    .list section {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
 
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         place-items: center;
     }
-    
+
 }
