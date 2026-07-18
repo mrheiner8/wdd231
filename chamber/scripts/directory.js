@@ -72,4 +72,3 @@ function showList() {
     listbutton.classList.add("active");
     gridbutton.classList.remove("active");
 }
-
