@@ -154,7 +154,7 @@ h1  {
 
 .hero img {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     /* Prevents the image from getting larger than its native size */
     height: auto;
     aspect-ratio: 16/9;
