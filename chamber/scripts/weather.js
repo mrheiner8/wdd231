@@ -1,4 +1,3 @@
-console.log("Weather script is connected and running!");
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const forecastCards = document.querySelector('#forecast-cards');
@@ -52,8 +51,7 @@ function displayResults(data) {
 function displayForecast(data) {
     // 1. Filter the 40 items down to just the midday items
     const middayForecasts = data.list.filter(item => item.dt_txt.includes('18:00:00'));
-
-    console.log(middayForecasts); // Let's check our work! 
+ 
     const threeDay = middayForecasts.slice(0, 3);
 
     threeDay.forEach(day => {
@@ -67,8 +65,6 @@ function displayForecast(data) {
         let iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
         let date = new Date(day.dt_txt);
         let dayName = date.toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'});
-
-        console.log(dayName);
 
         forecastDate.textContent = dayName;
         dayDesc.textContent = day.weather[0].description;

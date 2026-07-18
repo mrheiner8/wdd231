@@ -1,12 +1,22 @@
 const url = 'data/members.json';
-const membersContainer = document.querySelector('#spotlights');
+const spotlightsContainer = document.querySelector('#spotlights');
 
 async function getMembersData() {
     const response = await fetch(url);
     const data = await response.json();
-    displayMembers(data.members);
+    processSpotlights(data.members);
 }
 getMembersData();
+
+function processSpotlights(members) {
+    const highLevelMembers = members.filter(member => member.level == 2 || member.level == 3);
+
+    const shuffled = highLevelMembers.sort(() => 0.5 - Math.random());
+
+    const selected = shuffled.slice(0, 3);
+
+    displayMembers(selected);
+} 
 
 const displayMembers = (members) => {
     members.forEach((member) => {
@@ -47,6 +57,6 @@ const displayMembers = (members) => {
         card.appendChild(pNumber);
         card.appendChild(site);
 
-        membersContainer.appendChild(card);
+        spotlightsContainer.appendChild(card);
     });
 }

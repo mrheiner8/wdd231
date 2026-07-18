@@ -140,7 +140,56 @@ header span {
     color: var(--font-color);
 }
 
-h1 {
+h1  {
+    margin-left: 13px;
+    padding-left: 7px;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 1400px;
+    /* Prevents the image from getting larger than its native size */
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.hero .action-area #cta-button{
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    left: 3rem;
+    margin: 10px 3rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--main-color);
+    font-family: var(--site-font);
+    color: var(--nav-text-color);
+    border: solid 1px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+.hero .action-area #cta-button:hover{
+background-color: var(--nav-color);
+color: var(--font-color);
+}
+
+article {
+    margin: 13px;
+    padding-left: 7px;
+}
+
+article p {
     margin-left: 13px;
     padding-left: 7px;
 }
