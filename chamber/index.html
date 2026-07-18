@@ -19,6 +19,7 @@
     <link rel="icon" href="favicon.ico">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
@@ -48,9 +49,19 @@
         <article>
             <h2>Current Events</h2>
         </article>
-        <figure>
-            <figcaption>weather</figcaption>
-        </figure>
+        <section class="weather">
+            <div id="current">
+            <h2>Current Temperature in Colorado Springs <span id="current-temp"></span></h2>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            </div>
+            <div id="forecast">
+                <h2>3 Day forecast for Colorado Springs</h2>
+                <div id="forecast-cards"></div>
+            </div>
+        </section>
         <aside>
             <h2>Company Spotlights</h2>
         </aside>
