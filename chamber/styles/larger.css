@@ -35,6 +35,13 @@
     .list section {
         grid-template-columns: repeat(5, minmax(0, 1fr));
     }
+    
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0.5rem;
+        padding: rem;
+    }
 
     footer {
         display: grid;

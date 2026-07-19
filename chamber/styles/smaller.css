@@ -24,14 +24,22 @@ body {
     color: var(--font-color);
 }
 
-section {
+section, article, aside  {
     padding: 15px;
     margin: 8px;
     background-color: #f3f3f3;
     box-shadow: var(--box-shadow);
     border-radius: 5px;
+}
+
+section {
     text-align: center;
     /* Centers the text and images inside the cards */
+}
+
+article p {
+    margin-left: 13px;
+    padding-left: 7px;
 }
 
 h2,
@@ -145,6 +153,10 @@ h1  {
     padding-left: 7px;
 }
 
+.sr-only{
+    display: none;
+}
+
 .hero{
     position: relative;
     display: flex;
@@ -162,7 +174,7 @@ h1  {
     box-shadow: var(--box-shadow);
 }
 
-.hero .action-area #cta-button{
+#cta-button{
     position: absolute;
     top: 1rem;
     right: 3rem;
@@ -179,19 +191,16 @@ h1  {
     border-radius: 5px;
     box-shadow: var(--box-shadow);
 }
-.hero .action-area #cta-button:hover{
+#cta-button:hover{
 background-color: var(--nav-color);
 color: var(--font-color);
 }
 
-article {
-    margin: 13px;
-    padding-left: 7px;
-}
-
-article p {
-    margin-left: 13px;
-    padding-left: 7px;
+#forecast-cards{
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 1rem;
 }
 
 .grid-buttons {
@@ -212,8 +221,6 @@ article p {
     border: solid 1px;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
-
-
 }
 
 #members {
