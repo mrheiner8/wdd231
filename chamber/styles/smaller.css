@@ -24,7 +24,9 @@ body {
     color: var(--font-color);
 }
 
-section, article, aside  {
+section,
+article,
+aside {
     padding: 15px;
     margin: 8px;
     background-color: #f3f3f3;
@@ -148,16 +150,16 @@ header span {
     color: var(--font-color);
 }
 
-h1  {
+h1 {
     margin-left: 13px;
     padding-left: 7px;
 }
 
-.sr-only{
+.sr-only {
     display: none;
 }
 
-.hero{
+.hero {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -174,7 +176,7 @@ h1  {
     box-shadow: var(--box-shadow);
 }
 
-#cta-button{
+#cta-button {
     position: absolute;
     top: 1rem;
     right: 3rem;
@@ -191,16 +193,31 @@ h1  {
     border-radius: 5px;
     box-shadow: var(--box-shadow);
 }
-#cta-button:hover{
-background-color: var(--nav-color);
-color: var(--font-color);
+
+#cta-button:hover {
+    background-color: var(--nav-color);
+    color: var(--font-color);
 }
 
-#forecast-cards{
+#forecast-cards {
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 1rem; 
+}
+
+figcaption, #forecast-cards p{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.weather img {
+    width: 100%;
+    max-width: 100px;
+    /* Prevents the image from getting larger than its native size */
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
 }
 
 .grid-buttons {
