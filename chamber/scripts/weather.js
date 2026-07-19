@@ -1,3 +1,4 @@
+const currentWeather =document.querySelector('#current-weather')
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const forecastCards = document.querySelector('#forecast-cards');
@@ -39,13 +40,23 @@ function displayResults(data) {
 
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
 
+
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+
+    let weatherFigure = document.createElement('figure');
+    let weatherIcon = document.createElement('img');
+    let captionDesc = document.createElement('p');
 
     let desc = data.weather[0].description;
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
+
+    weatherFigure.appendChild(weatherIcon);
+    weatherFigure.appendChild(captionDesc);
+
+    currentWeather.appendChild(weatherFigure);
 }
 
 function displayForecast(data) {
