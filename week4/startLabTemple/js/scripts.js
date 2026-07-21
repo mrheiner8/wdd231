@@ -16,7 +16,7 @@ myClose.addEventListener('click', () => myDialog.close());
 
 //------ LOOP THROUGH THE ARRAY OF JSON ITEMS
 function displayItems(data) {
-    console.log(data)
+    //console.log(data)
     data.forEach(x => {
         console.log(x)
         const photo = document.createElement('img')
@@ -36,32 +36,3 @@ function showStuff(x) {
     myInfo.innerHTML = `<p>Dedicated ${x.dedicated} by ${x.person} as temple number ${x.number}.</p>`;
     myDialog.showModal();
 }// end function
-
-/*
-const openButton1 = document.querySelector('#openButton1');
-const openButton2 = document.querySelector('#openButton2');
-const openButton3 = document.querySelector('#openButton3');
-
-const dialogBox = document.querySelector('#dialogBox');
-const dialogBoxText = document.querySelector('#dialogBox div');
-const closeButton = document.querySelector('#closeButton');
-
-// 'Show the dialog' button opens the dialog modally
-openButton1.addEventListener('click', () => {
-    dialogBoxText.innerHTML = 'An Apple has 95 calories.'
-    dialogBox.showModal();
-});
-
-openButton2.addEventListener('click', () => {
-    dialogBoxText.innerHTML = 'An orange has 45 calories.'
-    dialogBox.showModal();
-});
-
-openButton3.addEventListener('click', () => {
-    dialogBoxText.innerHTML = 'An Orange has 105 calories.'
-    dialogBox.showModal();
-});
-
-
-'number', 'name', 'dedicated', 'person', 'path'
-*/

@@ -210,5 +210,12 @@ export const temples = [
         "person": "Gordon B. Hinckley",
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
     }
+    {
+        "number": "40",
+        "name": "Denver Colorado Temple",
+        "dedicated": "October, 1986",
+        "person": "Ezra Taft Benson",
+        "path": "denver-colorado/320x200/denver-temple-lds-766966-wallpaper.jpg"
+    }
 ]
 
