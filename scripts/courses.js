@@ -3,7 +3,7 @@ const wddLink = document.querySelector('#wdd');
 const cseLink = document.querySelector('#cse');
 const numCredits = document.querySelector('#credits');
 const card = document.querySelector('#card-container');
-
+const courseDetails = document.querySelector('#course-details')
 
 const courses = [
     {
@@ -107,20 +107,41 @@ function displayCourses(filteredCourses) {
     const totalCredits = filteredCourses.reduce((accumulator, course) => accumulator + course.credits, 0);
     document.getElementById("totalCredits").innerHTML = totalCredits;
     filteredCourses.forEach(course => {
-        let card = document.createElement("figure");
+        let card = document.createElement("li");
         card.innerHTML = `
+            <h2>${course.subject} ${course.number}:<br>${course.title}</h2>
+        `;
+        mainElement.appendChild(card);
+        if (course.completed) {
+            card.classList.add("completed-course");
+        }
+        card.addEventListener("click", () => {
+            displayCoursesDetails(course);
+        })
+    });
+
+}
+
+displayCourses(courses);
+
+
+function displayCoursesDetails(course) {
+    courseDetails.innerHTML = `
+            <button id="closeModal">&times;</button>
             <h2>${course.subject} ${course.number}:<br>${course.title}</h2>
             <p>Credits: ${course.credits}</p>
             <p>Certificate: ${course.certificate}</p>
             <p>Description: ${course.description}</p>
             <p>Technology: ${course.technology}</p>
             `;
-        mainElement.appendChild(card);
-        if (course.completed) {
-            card.classList.add("completed-course");
-        }
+
+    if (course.completed) {
+        courseDetails.classList.add("completed-course");
+    }
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#closeModal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
     });
-
 }
-
-displayCourses(courses);

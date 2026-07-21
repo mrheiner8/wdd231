@@ -32,7 +32,7 @@ h2,
 p,
 #course-list,
 #course-list a,
-figure {
+#card-container {
     padding: 5px;
     margin: 8px 0;
 }
@@ -106,12 +106,12 @@ h2 {
 
 .hamburger::before {
     content: "\2630";
-    font-size: 2rem;
+    font-size: 3ch;
 }
 
 .hamburger.show::before {
     content: "\00D7";
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* --- 5. NAVIGATION --- */
@@ -157,7 +157,7 @@ h2 {
     text-align: center;
 }
 
-.course ul li p{
+.course ul li p {
     text-align: left;
 }
 
@@ -182,19 +182,27 @@ h2 {
     font-size: 1.25em;
 }
 
-#course-list a:hover {
+#course-list a:hover,
+#card-container h2:hover {
     background-color: var(--nav-color);
     color: var(--font-color);
-}
-
-#course-list li.active {
-    text-decoration: underline;
+    cursor: pointer;
 }
 
 .completed-course h2::before {
-    content: " \2714";
+    content: "\2714";
     color: var(--nav-color);
     margin-right: 15px;
+}
+
+.completed-course h2:hover::before {
+    content: "\2714";
+    color: var(--main-color);
+    margin-right: 15px;
+}
+
+#card-container li{
+    list-style: none;
 }
 
 /* --- Footer--- */
@@ -231,11 +239,76 @@ footer {
 }
 
 
-/* --- 6. IMAGES & FIGURES --- */
+/* --- IMAGES & FIGURES --- */
 .profile {
     display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
     aspect-ratio: 4/5;
+}
+
+/* --- Dialog Box --- */
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+dialog button {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: .25rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+    color: var(--nav-color);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog button:hover {
+    background-color: var(--nav-color);
+    color: var(--main-color);
+}
+
+#course-details div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: var(--background-color);
+    padding: 5px;
+}
+
+#course-details h2 {}
+
+#card-container button {
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+
+#card-container {
+    margin: 0;
+    border-radius: 5px;
+    border: none;
+}
+
+#course-details p {
+    padding: 10px;
+    color: var(--font-color);
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
 }
