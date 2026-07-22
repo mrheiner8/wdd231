@@ -1,0 +1,149 @@
+/* --- RESETS & VARIABLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgba(0 110 182 / 1);
+    --nav-color: rgba(18, 18, 19, 0.846);
+    --heading-text-color: #fff;
+    --border-color: black;
+    --heading-font: "Quicksand", sans-serif;
+    --body-font: "Quicksand", sans-serif;
+    --box-shadow: 0 0 15px gray;
+}
+
+/* --- BASE ELEMENTS --- */
+body {
+    font-family: var(--body-font);
+}
+
+h1 {
+    grid-column: 1 / 4;
+    font-family: var(--heading-font);
+    margin: 1rem 2rem 5rem;
+    color: rgba(11, 11, 45, 0.846);
+    text-align: center;
+}
+
+/* --- PAGE STRUCTURE --- */
+header {
+    background-color: var(--main-color);
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--heading-text-color);
+}
+
+span {
+    padding: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-content: center;
+    background-color: #eee;
+    max-width: 800px;
+    margin: auto;
+}
+
+.loader {
+    margin: 2rem;
+    width: 50px;
+    /* Width of loader */
+    height: 50px;
+    /* Height of loader */
+    border: 5px solid transparent;
+    /* Border width */
+    border-color: #999 transparent #999 transparent;
+    /* Border colors (2 and 4 transparent) */
+    border-radius: 50%;
+    /* Make it round */
+    animation: spin 1.5s linear infinite;
+    /* spin animation with duration and continuous */
+    box-shadow: 0 0 1rem rgb(0 110 182 / 100%);
+    /* bluish shadow effect around div */
+}
+
+.loader::after {
+    content: '🍕';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+
+    /* Spin 360% */
+}
+
+@keyframes pulse {
+
+    /* Pulse the emoji */
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    /* Scale to 100% */
+    50% {
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+    /* Scale to 125% */
+}
+
+.loader-t {
+    margin: 2rem;
+    width: 50px;
+    /* Width of loader */
+    height: 50px;
+    /* Height of loader */
+    border: 5px solid transparent;
+    /* Border width */
+    border-color: #999 transparent #999 transparent;
+    /* Border colors (2 and 4 transparent) */
+    border-radius: 50%;
+    /* Make it round */
+    transition: transform 1.5s linear;
+    /* spin transition with duration and continuous */
+    box-shadow: 0 0 1rem rgb(0 110 182 / 100%);
+    /* bluish shadow effect around div */
+}
+
+.loader-t::after {
+    content: '🍕';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+.loader-t:hover {
+    transform: rotate(360deg);
+    /* Rotate on hover*/
+}
+
+.loader-t:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+    /* Scale on hover */
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 2rem;
+    color: var(--heading-text-color);
+}
+
+footer p {
+    text-align: center;
+}
