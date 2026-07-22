@@ -85,3 +85,18 @@
 </body>
 
 </html>
+
+<!-- 
+  Final Feedback & Bonus Improvements
+Since you mentioned everything is working great now, here are a few quick tips and best practices to keep in mind as you move forward in WDD 231:
+	1.	Accessibility (aria-label): Adding an aria-label="Close modal" attribute to your × helps screen readers clearly announce the button's purpose when using character entities like ×.
+	2.	Closing Modal by Clicking Outside (Optional Bonus):
+In modern web design, users often expect a modal to close if they click outside of it onto the dark backdrop. You can achieve this by listening for a click on the courseDetails element and checking if the click coordinates fall outside courseDetails.getBoundingClientRect().
+	3.	Array Formatting (course.technology):
+In your data array, technology is stored as an array (e.g., ['HTML', 'CSS', 'JavaScript']). When you print ${course.technology} directly inside a template string, JavaScript joins them with commas (HTML,CSS,JavaScript). If you ever want spaces after the commas, using .join(', ') makes it extra clean!
+What learning activity or assignment task would you like to work on next? (For example: Advanced Forms / URLSearchParams or CSS Animations & Transitions)
+
+Thank you for the feed back. lets do some of that later. eventually I want to link all of my assignments to their respective courses
+
+That sounds like a great plan! Linking assignment projects directly to each course inside the modal (or as button links) will make your course home page a fantastic portfolio piece as you progress through your degree.
+-->
