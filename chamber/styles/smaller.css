@@ -20,7 +20,7 @@
 /* --- 2. GLOBAL STYLES --- */
 body {
     font-family: var(--site-font);
-    background-color: var(--background-color);
+    background-color: #f8f8ff;
     color: var(--font-color);
 }
 
@@ -222,7 +222,7 @@ figcaption, #forecast-cards p{
 }
 .weather img {
     width: 100%;
-    max-width: 100px;
+    max-width: 50px;
     /* Prevents the image from getting larger than its native size */
     height: auto;
     aspect-ratio: 1/1;
