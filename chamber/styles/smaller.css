@@ -140,14 +140,16 @@ header span {
     color: var(--font-color);
 }
 
-.navigation li.active {
+.navigation li.active a {
     text-decoration: underline;
     color: var(--nav-text-color);
+    font-weight: bold;
 }
 
 .navigation li.active a:hover {
     text-decoration: underline;
     color: var(--font-color);
+    font-weight: bold;
 }
 
 h1 {
