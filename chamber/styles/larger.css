@@ -35,7 +35,15 @@
     .list section {
         grid-template-columns: repeat(5, minmax(0, 1fr));
     }
-    
+
+    #cta-button {
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.8rem;
+        padding: 0.5rem 1rem;
+    }
+
     .news {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -48,4 +56,12 @@
         place-items: center;
     }
 
+    figcaption,
+    #forecast-cards p {
+        font-size: 1.25rem;
+    }
+
+    #forecast-cards h3 {
+        font-size: 1rem;
+    }
 }

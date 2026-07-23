@@ -42,21 +42,15 @@ function displayResults(data) {
 
 
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-
-    let weatherFigure = document.createElement('figure');
-    let weatherIcon = document.createElement('img');
-    let captionDesc = document.createElement('p');
-
     let desc = data.weather[0].description;
-
+    
+    let weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
 
-    weatherFigure.appendChild(weatherIcon);
-    weatherFigure.appendChild(captionDesc);
+    currentWeather.insertBefore(weatherIcon, captionDesc);
 
-    currentWeather.appendChild(weatherFigure);
+    captionDesc.textContent = desc;
 }
 
 function displayForecast(data) {

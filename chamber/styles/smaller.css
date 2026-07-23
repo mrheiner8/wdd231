@@ -166,11 +166,14 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .hero img {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1650px;
     /* Prevents the image from getting larger than its native size */
     height: auto;
     aspect-ratio: 16/9;
@@ -180,12 +183,13 @@ h1 {
 
 #cta-button {
     position: absolute;
-    top: 1rem;
-    right: 3rem;
-    left: 3rem;
-    margin: 10px 3rem;
-    padding: 0.5rem 1rem;
-    font-size: 1.6rem;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0.3rem 0.4rem;
+    max-width: 90%;
+    font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
     background-color: var(--main-color);
@@ -208,8 +212,12 @@ h1 {
     padding: 1rem; 
 }
 
+#forecast-cards h3{
+    font-size: .9rem;
+}
+
 figcaption, #forecast-cards p{
-    font-size: 1.25rem;
+    font-size: .9rem;
     text-align: center;
 }
 .weather img {
@@ -257,7 +265,7 @@ figcaption, #forecast-cards p{
 .grid {
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 1rem;
 }
 
