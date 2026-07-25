@@ -22,5 +22,3 @@ document.querySelector('#results').innerHTML = `
 <p>Your Phone: ${(myInfo.get('phone'))}</p>
 <p>Your Email: ${(myInfo.get('email'))}</p>
 `
-
-animation: 2s linear 0.5s infinite alternate;
