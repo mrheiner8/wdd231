@@ -19,6 +19,7 @@
     <link rel="icon" href="favicon.ico">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
@@ -41,42 +42,123 @@
     </nav>
     <main>
         <h1>Join</h1>
-        <form method="GET" action="thanks.html" class="designOne">
-            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-            
-            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-            
-            <label>Organizational Title <input type="text" name="last" required autocomplete="organization-title"title="Your Last Name"></label>
+        <form method="GET" action="thankyou.html" class="designOne">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                    title="Your First Name"></label>
 
-            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
-                    placeholder="987-555-1234"></label>
-            
-            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email" autocomplete="email"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                    title="Your Last Name"></label>
 
-            <label>Business/Organization's Name <input type="text" name="last" required autocomplete="organization-title" title="Your Last Name"></label>
+            <label>Organizational Title <input type="text" name="org-title" required autocomplete="organization-title"
+                    title="Your Organizational Title" pattern="[A-Za-z\s-]{7,}"></label>
+
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                    autocomplete="email"></label>
+
+            <label>Mobile Phone Number <input type="tel" name="phone" required autocomplete="tel"
+                    title="A Phone Number with dashes" placeholder="719-555-1234"></label>
+
+            <label>Business/Organization's Name <input type="text" name="org-name" required autocomplete="organization"
+                    title="Your Business/Organization's Name"></label>
 
 
             <h3>Membership Level</h3>
-            <label><input type="radio" name="membership" value="np" checked> Membership is for non profit organizations and there is no fee</label>
+
+            <label><input type="radio" name="membership" value="np" checked> Membership is for non profit organizations
+                and there is no fee</label>
+
             <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+
             <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+
             <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
 
+            <label>Business/Organization's Description <textarea type="text area" name="Description"
+                    title="Description of Your Business/Organization's"></textarea></label>
 
-            <h3>Date and Location</h3>
-            <label>Date <input type="date" name="date" required></label>
+            <input type="hidden" name="timestamp" id="timeStamp">
 
-            <label>Location
-                <select name="location" required>
-                    <option value="">None</option>
-                    <option value="Payson">Payson</option>
-                    <option value="Orem">Orem</option>
-                    <option value="Provo City Center">Provo City Center</option>
-            </label>
-
-            <input type="submit" value="Schedule An Appointment">
+            <input type="submit" value="Join the Chamber">
         </form>
 
+        <div class="card" id="np-card">
+            <h3>Non Profit Membership</h3>
+            <button id="open-np" class="open-btn">Learn More</button>
+        </div>
+
+        <dialog id="modal-np" class="mem-modal">
+            <h2>Non Profit Membership</h2>
+            <p><strong>Cost:</strong> Free</p>
+            <p><strong>Description:</strong> Designed specifically for 501(c)(3) organizations looking to connect with
+                the local community.</p>
+            <p><strong>Perks:</strong></p>
+            <ul>
+                <li>Basic directory listing on the chamber website.</li>
+                <li>Access to community networking events and luncheons.</li>
+                <li>Invitation to annual non-profit workshops.</li>
+            </ul>
+            <button id="close-np" class="close-btn">Close</button>
+        </dialog>
+
+        <div class="card" id="bronze-card">
+            <h3>Bronze Membership</h3>
+            <button id="open-bronze" class="open-btn">Learn More</button>
+        </div>
+
+        <dialog id="modal-bronze" class="mem-modal">
+            <h2>Bronze Membership Benefits</h2>
+            <p><strong>Cost:</strong> $150/Year</p>
+            <p><strong>Description:</strong> Perfect for small business owners and startups looking for essential
+                exposure and networking opportunities.</p>
+            <p><strong>Perks:</strong></p>
+            <ul>
+                <li>Standard business directory listing.</li>
+                <li>10% discount on all chamber-sponsored training events.</li>
+                <li>Access to monthly networking breakfasts.</li>
+                <li>Ribbon-cutting ceremony assistance.</li>
+            </ul>
+            <button id="close-bronze" class="close-btn">Close</button>
+        </dialog>
+
+        <div class="card" id="silver-card">
+            <h3>Silver Membership</h3>
+            <button id="open-silver" class="open-btn">Learn More</button>
+        </div>
+
+        <dialog id="modal-silver" class="mem-modal">
+            <h2>Silver Membership Benefits</h2>
+            <p><strong>Cost:</strong> $350/Year</p>
+            <p><strong>Description:</strong> Tailored for growing businesses seeking greater visibility and targeted
+                marketing benefits.</p>
+            <p><strong>Perks:</strong></p>
+            <ul>
+                <li>25% discount on all event tickets and training sessions.</li>
+                <li>One social media spotlight per year on chamber channels.</li>
+                <li>Homepage spotlight feature (rotating spot on the chamber home page).</li>
+                <li>Choice of 1 advertising banner slot in the monthly newsletter.</li>
+            </ul>
+            <button id="close-silver" class="close-btn">Close</button>
+        </dialog>
+
+        <div class="card" id="gold-card">
+            <h3>Gold Membership</h3>
+            <button id="open-gold" class="open-btn">Learn More</button>
+        </div>
+
+        <dialog id="modal-gold" class="mem-modal">
+            <h2>Gold Membership Benefits</h2>
+            <p><strong>Cost:</strong> $750 / year</p>
+            <p><strong>Description:</strong> Our premier tier for established corporate leaders looking to maximize
+                community impact and brand positioning.</p>
+            <p><strong>Perks:</strong></p>
+            <ul>
+                <li>Featured directory listing at the top of relevant categories.</li>
+                <li>Free admission for up to 4 guests at all chamber networking events.</li>
+                <li>Homepage spotlight feature (rotating spot on the chamber home page).</li>
+                <li>VIP invitation to annual executive summits and sponsorship priority.</li>
+            </ul>
+            <button id="close-gold" class="close-btn">Close</button>
+        </dialog>
     </main>
     <footer>
         <div>
