@@ -1,5 +1,5 @@
-
-const today = new Date();
+// set up Const
+const formLoadedTime = new Date();
 const timeStamp = document.querySelector("#timeStamp");
 const openNp = document.querySelector("#open-np");
 const modalNp = document.querySelector("#modal-np");
@@ -15,7 +15,7 @@ const modalGold = document.querySelector("#modal-gold");
 const closeGold = document.querySelector("#close-gold");
 
 // Automatically set the hidden form timestamp field
-timeStamp.value = today.toISOString();
+timeStamp.value = formLoadedTime.toLocaleString();
 
 // Add an event listener to open the modal
 openNp.addEventListener("click", () => {
