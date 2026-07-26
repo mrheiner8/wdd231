@@ -64,4 +64,9 @@
     #forecast-cards h3 {
         font-size: 1rem;
     }
+        
+    #join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

@@ -23,6 +23,8 @@ const displayMembers = (members) => {
             card.classList.add("gold");
         } else if (level == 2) {
             card.classList.add("silver");
+        } else if (level == 1) {
+            card.classList.add("bronze");
         } else {
             card.classList.add("member");
         }
@@ -54,7 +56,6 @@ const displayMembers = (members) => {
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 
-// The following code could be written cleaner. How? We may have to simplify our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
     // example using arrow function
