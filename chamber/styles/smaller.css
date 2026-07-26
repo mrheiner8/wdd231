@@ -81,10 +81,7 @@ header img {
     margin: 10px;
 }
 
-
-
 header span {
-
     font-size: 2rem;
     font-weight: bold;
 }
@@ -408,6 +405,7 @@ legend {
 
 fieldset div {
     font-size: 1.25rem;
+    border: none;
 }
 
 fieldset label,
@@ -422,6 +420,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="number"],
+textarea[type="text area"],
 select {
     display: block;
     width: 100%;
@@ -435,11 +434,9 @@ select {
 
 input[type="radio"] {
     margin-right: 0.5rem;
+    cursor: pointer;
 }
 
-input[type="submit"] {}
-
-/* Add this to your ascend.css file */
 input:required:invalid {
     border-left: 5px solid var(--main-color);
 }
@@ -447,9 +444,28 @@ input:required:invalid {
 input:required:valid {
     border-left: 5px solid green;
 }
+
 #join {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+#submit {
+    margin: .5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+    font-family: var(--site-font);
+    color: var(--nav-text-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+#submit:hover {
+    background-color: var(--nav-color);
+    color: var(--font-color);
+    cursor: pointer;
 }
 
 .card {
@@ -457,7 +473,7 @@ input:required:valid {
     grid-gap: 0.5rem;
     margin: .5rem;
     padding: .5rem;
-    text-align: center;
+    place-items: center;
     background-color: var(--main-color);
     color: var(--nav-text-color);
     box-shadow: var(--box-shadow);
@@ -479,9 +495,15 @@ input:required:valid {
     background-color: var(--bronze-border);
     color: #f8f8ff;
 }
+.open-btn {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    width: 75%;
+}
 
 .open-btn:hover {
     background-color: var(--nav-color);
+    cursor: pointer;
 }
 
 @keyframes card-appear {
@@ -551,11 +573,13 @@ dialog button {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 dialog button:hover {
     background-color: var(--nav-color);
     color: var(--font-color);
+    cursor: pointer;
 }
 
 .mem-modal {
@@ -609,7 +633,8 @@ dialog button:hover {
     border: none;
 }
 
-#modal-np h2 {
+#modal-np h2,
+#thank-you h2 {
     background-color: var(--main-color);
     color: var(--nav-text-color);
     border-radius: 5px;
@@ -620,4 +645,14 @@ dialog button:hover {
 
 ::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* --- thank you --- */
+#thank-you h2{
+    background-color: var(--main-color);
+}
+
+#thank-you div, p{
+    text-align: left;
+    font-size: 1.2rem;
 }

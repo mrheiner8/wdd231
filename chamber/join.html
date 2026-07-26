@@ -70,21 +70,21 @@
                     <label>Business/Organization's Description: <textarea type="text area" name="Description"
                             title="Description of Your Business/Organization's"></textarea></label>
                 </fieldset>
+                <fieldset>
+                    <legend>Membership level</legend>
 
-                <h3>Membership Level</h3>
+                    <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
 
-                <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
 
-                <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
 
-                <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-
-                <label><input type="radio" name="membership" value="np" checked> No fee Membership for non profit
-                    organizations</label>
-
+                    <label><input type="radio" name="membership" value="np" checked> No fee Membership for non profit
+                        organizations</label>
+                </fieldset>
                 <input type="hidden" name="timeStamp" id="timeStamp">
 
-                <input type="submit" value="Join the Chamber">
+                <input id="submit" type="submit" value="Join the Chamber">
             </form>
             <section class="card-container">
                 <div class="card" id="gold-card">
