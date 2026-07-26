@@ -379,33 +379,26 @@ footer p {
 
 /* join and thank you */
 
-form{
+form {
     display: grid;
     grid-template-columns: 1fr;
     text-align: left;
 }
 
 fieldset {
+    padding: 15px;
+    margin: 8px;
     background-color: var(--secondary-color);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
 }
 
-legend,
-fieldset div {
+legend {
     display: block;
     font-weight: bold;
     text-align: left;
     margin: 0 0 0 1rem;
-}
-
-legend {
     font-size: 1.5rem;
-}
-
-fieldset div {
-    font-size: 1.25rem;
-    border: none;
 }
 
 fieldset label,
@@ -420,7 +413,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="number"],
-textarea[type="text area"],
+textarea,
 select {
     display: block;
     width: 100%;
@@ -451,7 +444,7 @@ input:required:valid {
 }
 
 #submit {
-    margin: .5rem 0;
+    margin: .5rem 5px;
     padding: 0.5rem 1rem;
     font-size: 1.6rem;
     background-color: var(--main-color);
@@ -468,33 +461,6 @@ input:required:valid {
     cursor: pointer;
 }
 
-.card {
-    display: grid;
-    grid-gap: 0.5rem;
-    margin: .5rem;
-    padding: .5rem;
-    place-items: center;
-    background-color: var(--main-color);
-    color: var(--nav-text-color);
-    box-shadow: var(--box-shadow);
-    border-radius: 5px;
-}
-
-
-#gold-card {
-    background-color: var(--gold-border);
-    color: var(--font-color);
-}
-
-#silver-card {
-    background-color: var(--silver-border);
-    color: var(--font-color);
-}
-
-#bronze-card {
-    background-color: var(--bronze-border);
-    color: #f8f8ff;
-}
 .open-btn {
     font-size: 1.2rem;
     margin: 0 auto;
@@ -519,18 +485,34 @@ input:required:valid {
 }
 
 .card {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem .5rem;
+    padding: .5rem;
+    place-items: center;
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
     animation: card-appear 1s ease-out backwards;
 }
 
 #gold-card {
+
+    background-color: var(--gold-border);
+    color: var(--font-color);
     animation-delay: 0s;
 }
 
 #silver-card {
+    background-color: var(--silver-border);
+    color: var(--font-color);
     animation-delay: .25s;
 }
 
 #bronze-card {
+    background-color: var(--bronze-border);
+    color: #f8f8ff;
     animation-delay: .5s;
 }
 
@@ -573,7 +555,7 @@ dialog button {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 dialog button:hover {
@@ -588,9 +570,13 @@ dialog button:hover {
     padding: 5px;
 }
 
-.mem-modal h2, li{
-    padding: 2px 10px;
+.mem-modal h2 {
+    text-align: center;
+}
 
+.mem-modal h2,
+li {
+    padding: 2px 10px;
 }
 
 .card-container button {
@@ -601,7 +587,8 @@ dialog button:hover {
 }
 
 .card-container {
-   box-shadow: none;
+    box-shadow: none;
+    background-color: #f8f8ff;
 }
 
 .mem-modal p {
@@ -648,11 +635,12 @@ dialog button:hover {
 }
 
 /* --- thank you --- */
-#thank-you h2{
+#thank-you h2 {
     background-color: var(--main-color);
 }
 
-#thank-you div, p{
+#thank-you div,
+p {
     text-align: left;
     font-size: 1.2rem;
 }
