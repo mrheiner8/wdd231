@@ -14,14 +14,22 @@
     --gold-border: #F0E68C;
     --silver-border: #D3D3D3;
     --bronze-border: #82651c;
+    --valid-color:#008000;
+    --card-body-background: #f8f8ff;
+    --light-background: #f3f3f3;
+    --list-alt-background: #bbb;
+    --border-bottom: #ddd;
+    --modal-border: rgba(0, 0, 0, 0.1);
+    --backdrop-background: rgba(0, 0, 0, 0.5);
     --site-font: 'Teachers', sans-serif;
     --box-shadow: 0 0 10px #808080;
+
 }
 
 /* --- 2. GLOBAL STYLES --- */
 body {
     font-family: var(--site-font);
-    background-color: #f8f8ff;
+    background-color: var(--card-body-background);
     color: var(--font-color);
 }
 
@@ -30,7 +38,7 @@ article,
 aside {
     padding: 15px;
     margin: 8px;
-    background-color: #f3f3f3;
+    background-color: var(--light-background);
     box-shadow: var(--box-shadow);
     border-radius: 5px;
 }
@@ -69,7 +77,7 @@ header {
     align-items: end;
     padding: 5px 0px 5px 10px;
     column-gap: 8px;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--border-bottom);
     place-items: center;
 }
 
@@ -295,7 +303,7 @@ figcaption,
 
 .grid .bronze h2 {
     background-color: var(--bronze-border);
-    color: #f8f8ff;
+    color: var(--card-body-background);
 }
 
 
@@ -328,7 +336,7 @@ figcaption,
 }
 
 .list section:nth-child(odd) {
-    background-color: #bbb;
+    background-color: var(--list-alt-background);
 }
 
 
@@ -435,7 +443,7 @@ input:required:invalid {
 }
 
 input:required:valid {
-    border-left: 5px solid green;
+    border-left: 5px solid var(--valid-color);
 }
 
 #join {
@@ -512,7 +520,7 @@ input:required:valid {
 
 #bronze-card {
     background-color: var(--bronze-border);
-    color: #f8f8ff;
+    color: var(--card-body-background);
     animation-delay: .5s;
 }
 
@@ -530,7 +538,7 @@ input:required:valid {
 
 /* --- Dialog Box --- */
 dialog {
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid var(--modal-border);
     border-radius: 5px;
     padding: 1rem;
     background-color: var(--background-color);
@@ -547,7 +555,7 @@ dialog button {
     bottom: 15px;
     right: 15px;
     border-radius: 5px;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid var(--modal-border);
     background-color: var(--main-color);
     box-shadow: var(--box-shadow);
     color: var(--nav-text-color);
@@ -572,6 +580,9 @@ dialog button:hover {
 
 .mem-modal h2 {
     text-align: center;
+        border-radius: 5px;
+            box-shadow: var(--box-shadow);
+            border: none;
 }
 
 .mem-modal h2,
@@ -588,7 +599,7 @@ li {
 
 .card-container {
     box-shadow: none;
-    background-color: #f8f8ff;
+    background-color: var(--card-body-background);
 }
 
 .mem-modal p {
@@ -599,44 +610,34 @@ li {
 #modal-gold h2 {
     background-color: var(--gold-border);
     color: var(--font-color);
-    border-radius: 5px;
-    box-shadow: var(--box-shadow);
-    border: none;
 }
 
 #modal-silver h2 {
     background-color: var(--silver-border);
     color: var(--font-color);
-    border-radius: 5px;
-    box-shadow: var(--box-shadow);
-    border: none;
 }
 
 #modal-bronze h2 {
     background-color: var(--bronze-border);
-    color: #f8f8ff;
-    border-radius: 5px;
-    box-shadow: var(--box-shadow);
-    border: none;
+    color: var(--card-body-background);
 }
 
-#modal-np h2,
+#modal-np h2{
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+}
+
+::backdrop {
+    background-color: var(--backdrop-background);
+}
+
+/* --- thank you --- */
 #thank-you h2 {
     background-color: var(--main-color);
     color: var(--nav-text-color);
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     border: none;
-}
-
-
-::backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* --- thank you --- */
-#thank-you h2 {
-    background-color: var(--main-color);
 }
 
 #thank-you div,
