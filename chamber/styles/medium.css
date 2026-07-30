@@ -64,9 +64,16 @@
     #forecast-cards h3 {
         font-size: 1rem;
     }
-        
+
     #join {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #all-places div {
+        grid-template-areas:
+            "photo name"
+            "photo description"
+            "photo location";
     }
 }
