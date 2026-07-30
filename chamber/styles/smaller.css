@@ -14,7 +14,7 @@
     --gold-border: #F0E68C;
     --silver-border: #D3D3D3;
     --bronze-border: #82651c;
-    --valid-color:#008000;
+    --valid-color: #008000;
     --card-body-background: #f8f8ff;
     --light-background: #f3f3f3;
     --list-alt-background: #bbb;
@@ -506,7 +506,6 @@ input:required:valid {
 }
 
 #gold-card {
-
     background-color: var(--gold-border);
     color: var(--font-color);
     animation-delay: 0s;
@@ -580,9 +579,9 @@ dialog button:hover {
 
 .mem-modal h2 {
     text-align: center;
-        border-radius: 5px;
-            box-shadow: var(--box-shadow);
-            border: none;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    border: none;
 }
 
 .mem-modal h2,
@@ -622,7 +621,7 @@ li {
     color: var(--card-body-background);
 }
 
-#modal-np h2{
+#modal-np h2 {
     background-color: var(--main-color);
     color: var(--nav-text-color);
 }
@@ -645,3 +644,54 @@ p {
     text-align: left;
     font-size: 1.2rem;
 }
+
+/* --- Discover --- */
+#all-places {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 1rem;
+    margin: 1rem 8px;
+}
+
+#all-places div{
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+    "name"
+    "photo"
+    "description"
+    "location";
+}
+
+#all-places div h2 {
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    grid-area: name;
+}
+
+#all-places div img {
+    width: 100%;
+    max-width: 300px;
+    /* Prevents the image from getting larger than its native size */
+    height: 200;
+    aspect-ratio: 3/2;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    grid-area: photo;
+}
+
+#all-places div address{
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+#all-places div p {
+    display: block;
+    text-align: start;
+    grid-area: description;
+}
+

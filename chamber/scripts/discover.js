@@ -14,6 +14,8 @@ function displayItems(attractions) {
         const thephoto = document.createElement('img')
         thephoto.src = `images/${x.photo_url}`
         thephoto.alt = x.alt
+        thephoto.setAttribute('width', '200');
+        thephoto.setAttribute('height', '300');
         thecard.appendChild(thephoto)
         // build the title element
         const thetitle = document.createElement('h2')
