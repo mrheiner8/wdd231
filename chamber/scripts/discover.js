@@ -8,29 +8,30 @@ const showHere = document.querySelector("#all-places")
 //------- LOOP THROUGH THE ARRAY OF JSON ITEMS
 function displayItems(attractions) {
     attractions.forEach(x => {
-        //build the card element
-        const thecard = document.createElement('div')
+        //build the card/figure element
+        const thecard = document.createElement('figure');
         //build the photo element
-        const thephoto = document.createElement('img')
-        thephoto.src = `images/${x.photo_url}`
-        thephoto.alt = x.alt
-        thephoto.setAttribute('width', '200');
-        thephoto.setAttribute('height', '300');
-        thecard.appendChild(thephoto)
+        const thephoto = document.createElement('img');
+        thephoto.src = `images/${x.photo_url}`;
+        thephoto.alt = x.alt;
+        thephoto.setAttribute('loading', 'lazy');
+        thephoto.setAttribute('width', '300');
+        thephoto.setAttribute('height', '200');
+        thecard.appendChild(thephoto);
         // build the title element
-        const thetitle = document.createElement('h2')
-        thetitle.innerHTML = x.name
-        thecard.appendChild(thetitle)
+        const thetitle = document.createElement('h2');
+        thetitle.innerHTML = x.name;
+        thecard.appendChild(thetitle);
         // build the address elements
-        const theaddress = document.createElement('address')
-        theaddress.innerHTML = x.address
-        thecard.appendChild(theaddress)
+        const theaddress = document.createElement('address');
+        theaddress.innerHTML = x.address;
+        thecard.appendChild(theaddress);
         // build the description element
-        const thedesc = document.createElement('p')
-        thedesc.innerHTML = x.description
-        thecard.appendChild(thedesc)
+        const thedesc = document.createElement('p');
+        thedesc.innerHTML = x.description;
+        thecard.appendChild(thedesc);
 
-        showHere.appendChild(thecard)
+        showHere.appendChild(thecard);
     }); //end loop
 } // end function
 

@@ -654,7 +654,7 @@ p {
     margin: 1rem 8px;
 }
 
-#all-places div{
+#all-places figure{
     overflow: hidden;
     display: grid;
     grid-template-areas:
@@ -664,7 +664,7 @@ p {
     "location";
 }
 
-#all-places div h2 {
+#all-places figure h2 {
     text-align: center;
     background-color: var(--main-color);
     color: var(--nav-text-color);
@@ -673,23 +673,23 @@ p {
     grid-area: name;
 }
 
-#all-places div img {
+#all-places figure img {
     width: 100%;
     max-width: 300px;
     /* Prevents the image from getting larger than its native size */
-    height: 200;
+    height: 200px;
     aspect-ratio: 3/2;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     grid-area: photo;
 }
 
-#all-places div address{
+#all-places figure address{
     margin: 1rem 10px;
     grid-area: location;
 }
 
-#all-places div p {
+#all-places figure p {
     display: block;
     text-align: start;
     grid-area: description;

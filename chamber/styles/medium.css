@@ -70,7 +70,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    #all-places div {
+    #all-places figure {
         grid-template-areas:
             "photo name"
             "photo description"
