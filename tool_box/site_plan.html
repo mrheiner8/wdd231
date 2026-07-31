@@ -11,20 +11,18 @@
     <meta name="author" content="Michael Heiner">
     <!-- META OG Tags -->
     <meta property="og:title" content="Smart Tool Box | Site Plan | WDD231">
-    <meta property="og:description"
-        content="Site plan for Smart Tool Box website. HTML, CSS, JavaScript, Json, site plan">
-    <meta property="og:image" content="https://mrheiner8.github.io/wdd231/tool_box/images/#.svg">
-    <meta property="og:url" content="https://mrheiner8.github.io/wdd231/toolbox/site_plan.html">
+    <meta property="og:description" content="Site plan for Smart Tool Box website. HTML, CSS, JavaScript, Json, site plan">
+    <meta property="og:image" content="https://mrheiner8.github.io/wdd231/tool_box/images/logo.svg">
+    <meta property="og:url" content="https://mrheiner8.github.io/wdd231/tool_box/site_plan.html">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/smaller.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico"><!--fill this in later-->
+    <link rel="icon" href="favicon.ico">
     <!-- Java Script -->
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
     <!-- Google Fonts: Acme and Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +44,6 @@
             <p><strong>Reason for Name:</strong> The name plays on a double meaning—the website itself serves as a
                 digital "toolbox" for visitors, while highlighting tools and kitchen gadgets that are smart,
                 time-saving finds.</p>
-            <p><strong>Site Purpose:</strong>
             <p><strong>Domain:</strong> smart-toolbox.org</p>
         </section>
 
@@ -63,14 +60,8 @@
         <!-- Section 3: Target Audience Scenarios -->
         <section>
             <h2>Target Audience Scenarios</h2>
-            <ul>
-                <li><strong>Scenario 1:</strong> "What is a safe, easy-to-clean gadget that can speed up daily food
-                    prep like
-                    chopping or grating?"</li>
-                <li><strong>Scenario 2:</strong> "How can I submit a recommendation for a clever tool I use at home
-                    so others
-                    can find it?"</li>
-            </ul>
+                <p><strong>Scenario 1:</strong> "What is a safe, easy-to-clean gadget that can speed up daily food prep like chopping or grating?"</p>
+                <p><strong>Scenario 2:</strong> "How can I submit a recommendation for a clever tool I use at home so others can find it?"</p>  
         </section>
 
         <!-- Section 4: Color Schema -->
@@ -78,18 +69,12 @@
             <h2>Color Schema</h2>
             <p>This site plan uses the following defined brand color palette:</p>
             <ul class="color-palette">
-                <li><span class="swatch" style="background-color: #0707e4;"></span> <strong>Primary Brand Color
-                        (#0707e4):</strong> Used for header backgrounds, major titles, and primary action buttons.</li>
-                <li><span class="swatch" style="background-color: #f6d309;"></span> <strong>Secondary Accent
-                        (#f6d309):</strong> Used for button highlights, badge accents, and focus borders.</li>
-                <li><span class="swatch" style="background-color: #F5F5F5;"></span> <strong>Main Background
-                        (#F5F5F5):</strong> Used for general page body background.</li>
-                <li><span class="swatch" style="background-color: #F8F8FF;"></span> <strong>Card Background
-                        (#F8F8FF):</strong> Used for tool directory item container backgrounds.</li>
-                <li><span class="swatch" style="background-color: #304250;"></span> <strong>Primary Text
-                        (#304250):</strong> Used for body copy and main reading text.</li>
-                <li><span class="swatch" style="background-color: #212a31;"></span> <strong>Secondary Text
-                        (#212a31):</strong> Used for navigation links, borders, and footer details.</li>
+                <li><strong>Primary Brand Color(#0707e4):</strong> <span class="swatch" id="primary_brand_color"></span> Used for header backgrounds, major titles, and primary action buttons.</li>
+                <li><strong>Secondary Accent (#f6d309):</strong> <span class="swatch" id="secondary_accent_color"></span> Used for button highlights, badge accents, and focus borders.</li>
+                <li><strong>Main Background (#F5F5F5):</strong> <span class="swatch" id="main_background"></span> Used for general page body background.</li>
+                <li><strong>Card Background (#F8F8FF):</strong> <span class="swatch" id="card_background"></span> Used for tool directory item container backgrounds.</li>
+                <li><strong>Primary Text (#304250):</strong> <span class="swatch" id="primary_text_color"></span> Used for body copy and main reading text.</li>
+                <li><strong>Secondary Text (#212a31):</strong> <span class="swatch" id="secondary_text_color"></span> Used for navigation links, borders, and footer details.</li>
             </ul>
         </section>
 
@@ -105,7 +90,7 @@
         </section>
 
         <!-- Section 7: Wireframes -->
-        <section>
+        <section class="wire_frames">
             <h2>5. Wireframes</h2>
             <div class="wireframe-container">
                 <h3>Mobile View (Small Screen)</h3>
@@ -120,8 +105,7 @@
 
     <footer>
         <div>
-            <p>WDD231 Final Project | Michael Heiner<br>© <span id="currentYear"></span> Colorado Springs Chamber of
-                Commerce<br>Last Modification: <span id="lastModified"></span></p>
+            <p>© <span id="currentYear"></span> SmartToolBox<br>WDD231 Final Project | Michael Heiner<br>Last Modification: <span id="lastModified"></span></p>
         </div>
 
     </footer>
