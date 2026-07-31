@@ -6,7 +6,7 @@
         width: 100%;
     }
     .wire_frames h2 {
-        grid-column: 1/4;
+        grid-column: 1 / -1;
     }
 }
 /* --- End medium.css ---*/

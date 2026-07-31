@@ -29,7 +29,7 @@
     /*-- Applied to body paragraphs, list items, navigation links, and form labels for crisp legibility  --*/
     --box-shadow: 0 0 10px #808080;
     /*-- For box shadow  --*/
-    --border-radius: 5px
+    --border-radius: 5px;
 }
 
 body {
