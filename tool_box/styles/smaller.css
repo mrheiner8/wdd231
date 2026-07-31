@@ -51,7 +51,7 @@ section {
 }
 
 h1,
-h2 {
+h2, footer p {
     font-family: var(--heading-font);
     text-align: center;
     width: 55%;
