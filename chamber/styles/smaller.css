@@ -670,6 +670,10 @@ p {
     "button";
 }
 
+#all-places #welcome {
+    grid-column: 1 / -1;
+}
+
 #all-places div h2 {
     text-align: center;
     background-color: var(--main-color);
