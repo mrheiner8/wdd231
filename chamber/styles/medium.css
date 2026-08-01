@@ -1,3 +1,4 @@
+/* --- medium.css ---*/
 @media (min-width: 38rem) {
 
     header,
@@ -70,10 +71,26 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    #all-places figure {
+    #all-places div {
+        grid-template-columns: 180px 1fr;
+        align-items: center;
         grid-template-areas:
             "photo name"
             "photo description"
-            "photo location";
+            "photo location"
+            "photo button";
+    }
+
+    #all-places div figure img,
+    #all-places div button {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    #all-places div figure img:hover,
+    #all-places div button:hover {
+        transform: scale(1.04);
+        filter: brightness(1.05);
     }
 }
+
+/* --- End medium.css ---*/

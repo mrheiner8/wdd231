@@ -1,3 +1,4 @@
+// places.mjs
 export const attractions = [
     {
         "name": "Garden of the Gods Park",
@@ -72,3 +73,4 @@ export const attractions = [
         "alt": "Colorado Springs Pioneers Museum and Plaza of the Rockies South Tower"
     }
 ];
+//End places.js

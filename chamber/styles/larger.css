@@ -1,7 +1,17 @@
+/* --- larger.css ---*/
 @media (min-width: 64rem) {
 
     #all-places {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    #all-places div {
+        grid-template-areas:
+            "name name"
+            "photo description"
+            "location button";
+    }
 }
+
+/* --- End larger.css ---*/

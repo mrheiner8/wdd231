@@ -1,3 +1,4 @@
+/* --- smaller.css ---*/
 /* --- 1. RESET & VARIABLES ---*/
 * {
     margin: 0;
@@ -649,49 +650,70 @@ p {
 #all-places {
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, 1fr); 
     padding: 1rem;
     margin: 1rem 8px;
 }
 
-#all-places figure{
+#all-places div {
     overflow: hidden;
     display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--card-body-background);
+    color: var(--font-color);
     grid-template-areas:
     "name"
     "photo"
     "description"
-    "location";
+    "location"
+    "button";
 }
 
-#all-places figure h2 {
+#all-places div h2 {
     text-align: center;
     background-color: var(--main-color);
     color: var(--nav-text-color);
     box-shadow: var(--box-shadow);
     border-radius: 5px;
+    padding: .5rem 1rem;
     grid-area: name;
 }
 
-#all-places figure img {
+#all-places div figure {
+    grid-area: photo;
+    margin: 0;
+}
+
+#all-places div figure img {
     width: 100%;
     max-width: 300px;
     /* Prevents the image from getting larger than its native size */
-    height: 200px;
+    height: auto;
     aspect-ratio: 3/2;
     border-radius: 5px;
-    box-shadow: var(--box-shadow);
-    grid-area: photo;
+    box-shadow: var(--box-shadow);   
 }
 
-#all-places figure address{
+#all-places div address{
     margin: 1rem 10px;
     grid-area: location;
 }
 
-#all-places figure p {
+#all-places div p {
     display: block;
     text-align: start;
     grid-area: description;
 }
 
+#all-places div button {
+    text-align: center;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    grid-area: button;
+}
+/* --- End smaller.css ---*/
