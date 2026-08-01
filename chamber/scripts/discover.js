@@ -22,8 +22,8 @@ function displayItems(attractions) {
         thephoto.src = `images/${x.photo_url}`;
         thephoto.alt = x.alt;
         thephoto.setAttribute('loading', 'lazy');
-        thephoto.setAttribute('width', '300');
-        thephoto.setAttribute('height', '200');
+        thephoto.setAttribute('width', '180');
+        thephoto.setAttribute('height', 'auto');
         imageFigure.appendChild(thephoto);
         
         // build the title element
