@@ -650,7 +650,7 @@ p {
 #all-places {
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, 1fr); 
+    grid-template-columns: repeat(auto-fit); 
     padding: 1rem;
     margin: 1rem 8px;
 }
@@ -672,6 +672,9 @@ p {
 
 #all-places #welcome {
     grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #all-places div h2 {
