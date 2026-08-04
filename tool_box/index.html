@@ -1,0 +1,92 @@
+<!-- wdd231/tool_box/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title, Description and Author -->
+    <title>Smart Tool Box | Home | WDD231</title>
+    <meta name="description"
+        content=" Smart Tool Box website: Clever Household Tools and Gadgets Directory (A guide to practical, time-saving tools for around the home). HTML, CSS, JavaScript, Json,">
+    <meta name="author" content="Michael Heiner">
+    <!-- META OG Tags -->
+    <meta property="og:title" content="Smart Tool Box | Home | WDD231">
+    <meta property="og:description"
+        content="Smart Tool Box website: Clever Household Tools and Gadgets Directory (A guide to practical, time-saving tools for around the home). HTML, CSS, JavaScript, Json,">
+    <meta property="og:image" content="https://mrheiner8.github.io/wdd231/tool_box/images/logo.svg">
+    <meta property="og:url" content="https://mrheiner8.github.io/wdd231/tool_box/index.html">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- Java Script -->
+    <script src="scripts/getdates.js" defer></script>
+    <!-- Google Fonts: Acme and Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="SmartToolbox Logo" class="logo">
+        <h1>SmartToolbox</h1>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="directory.html">Have a Look In Our Toolbox</a></li>
+            <li><a href="form.html">Add a Tool to the Box</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="hero">
+            <h2 class="sr-only">Add a Tool to the Box</h2>
+            <img src="#" alt="#" width="1600" height="900" loading="eager">
+            <div class="action-area">
+                <a href="form.html" id="cta-button">Add a Tool to the Box</a>
+            </div>
+        </section>
+        <section class="about_us">
+            <article>
+                <h2>Mission statment</h2>
+                <p>Synergy pipeline leverage bandwidth blue-sky waterfall matrix iterate scalable paradigm game-changer
+                    touchpoint.
+                    Agile blockchain deliverables paradigm workflow onboarding hyper-growth matrix monetization key
+                    performance
+                    indicators ideation ecosystem deliverables. Disruptive bandwidth deliverables hyper-growth ecosystem
+                    onboarding
+                    hyper-growth matrix.</p>
+
+                <p>Ecosystem infrastructure bandwidth deliverables hyper-growth architecture agile workflow onboarding
+                    hyper-growth
+                    matrix monetization scalable. Disruptive paradigm monetization ecosystem deliverables bandwidth
+                    hyper-growth
+                    architecture onboarding hyper-growth matrix deliverables runway deliverables monetization.</p>
+
+            </article>
+
+            <div class="featuredTools">
+                <h2>Here are Some of Our Favorite Tools</h2>
+                <div id="feature-cards" class="grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>© <span id="currentYear"></span> SmartToolBox<br>WDD231 Final Project | Michael Heiner<br>Last
+                Modification: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
+<!-- End wdd231/tool_box/index.html  -->

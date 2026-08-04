@@ -1,0 +1,137 @@
+[
+    {
+        "id": "tool-01",
+        "name": "Ratcheting Screwdriver",
+        "category": "Hand Tool",
+        "primaryBenefit": "Screw or unscrew without having to reposition your hand grip continuously.",
+        "easeOfUse": "Easy",
+        "findIt": "Hardware section or local home improvement store",
+        "img": "images/ratcheting-screwdriver.webp"
+    },
+    {
+        "id": "tool-02",
+        "name": "Rotary Cheese Grater",
+        "category": "Kitchen",
+        "primaryBenefit": "Grates block cheese quickly and safely without risk of scraping fingers.",
+        "easeOfUse": "Easy",
+        "findIt": "Kitchenware aisle or cooking specialty shop",
+        "img": "images/rotary-cheese-grater.webp"
+    },
+    {
+        "id": "tool-03",
+        "name": "Magnetic Stud Finder",
+        "category": "Hand Tool",
+        "primaryBenefit": "Locates wall studs instantly using powerful rare-earth magnets without batteries.",
+        "easeOfUse": "Very Easy",
+        "findIt": "Hardware aisle or tool center",
+        "img": "images/magnetic-stud-finder.webp"
+    },
+    {
+        "id": "tool-04",
+        "name": "Silicone Garlic Peeler Roller",
+        "category": "Kitchen",
+        "primaryBenefit": "Removes garlic cloves from skin in seconds simply by rolling on the counter.",
+        "easeOfUse": "Very Easy",
+        "findIt": "Kitchen gadgets aisle or grocery stores",
+        "img": "images/garlic-peeler.webp"
+    },
+    {
+        "id": "tool-05",
+        "name": "Contour Gauge Duplicator",
+        "category": "Hand Tool",
+        "primaryBenefit": "Copies irregular shapes and profiles easily for precise tile or flooring cuts.",
+        "easeOfUse": "Moderate",
+        "findIt": "Flooring or carpentry department",
+        "img": "images/contour-gauge.webp"
+    },
+    {
+        "id": "tool-06",
+        "name": "Herb Scissors with 5 Blades",
+        "category": "Kitchen",
+        "primaryBenefit": "Chops fresh herbs directly into pans or salads quickly with uniform cuts.",
+        "easeOfUse": "Easy",
+        "findIt": "Kitchen supply or culinary aisle",
+        "img": "images/herb-scissors.webp"
+    },
+    {
+        "id": "tool-07",
+        "name": "Self-Leveling Laser Level",
+        "category": "Hand Tool",
+        "primaryBenefit": "Projects perfectly straight laser lines on walls for hanging pictures or shelves.",
+        "easeOfUse": "Moderate",
+        "findIt": "Tool department or measuring section",
+        "img": "images/laser-level.webp"
+    },
+    {
+        "id": "tool-08",
+        "name": "Adjustable Jar Opener Clamp",
+        "category": "Kitchen",
+        "primaryBenefit": "Leverages tight jar lids open with minimal hand strength required.",
+        "easeOfUse": "Easy",
+        "findIt": "Kitchen gadgets or accessibility aid section",
+        "img": "images/jar-opener.webp"
+    },
+    {
+        "id": "tool-09",
+        "name": "Flexible Extension Bit Holder",
+        "category": "Hand Tool",
+        "primaryBenefit": "Bends and twists to allow screwdrivers or drills to reach tight, awkward corners.",
+        "easeOfUse": "Moderate",
+        "findIt": "Drill accessories section at hardware stores",
+        "img": "images/flexible-extension.webp"
+    },
+    {
+        "id": "tool-10",
+        "name": "Avocado Slicer 3-in-1",
+        "category": "Kitchen",
+        "primaryBenefit": "Splits, pips, and slices avocados cleanly and safely in one tool.",
+        "easeOfUse": "Easy",
+        "findIt": "Kitchenware department or supermarket gadget rack",
+        "img": "images/avocado-slicer.webp"
+    },
+    {
+        "id": "tool-11",
+        "name": "Universal Socket Grip",
+        "category": "Hand Tool",
+        "primaryBenefit": "Adjusts instantly to grip hex nuts, hooks, and rusted fasteners of various sizes.",
+        "easeOfUse": "Easy",
+        "findIt": "Tool aisle or hardware gifts section",
+        "img": "images/universal-socket.webp"
+    },
+    {
+        "id": "tool-12",
+        "name": "Meat Claws Shredder",
+        "category": "Kitchen",
+        "primaryBenefit": "Shreds pork, chicken, or beef effortlessly without melting or bending.",
+        "easeOfUse": "Easy",
+        "findIt": "BBQ & grilling aisle or kitchen supply store",
+        "img": "images/meat-claws.webp"
+    },
+    {
+        "id": "tool-13",
+        "name": "Automatic Wire Stripper",
+        "category": "Hand Tool",
+        "primaryBenefit": "Strips wire insulation cleanly in a single squeeze without cutting internal strands.",
+        "easeOfUse": "Moderate",
+        "findIt": "Electrical tools section",
+        "img": "images/wire-stripper.webp"
+    },
+    {
+        "id": "tool-14",
+        "name": "Oil Splatter Screen Guard",
+        "category": "Kitchen",
+        "primaryBenefit": "Keeps hot oil from popping out of frying pans while letting steam escape.",
+        "easeOfUse": "Very Easy",
+        "findIt": "Cookware or frying accessories section",
+        "img": "images/splatter-screen.webp"
+    },
+    {
+        "id": "tool-15",
+        "name": "Telescoping Magnetic Pickup Tool",
+        "category": "Hand Tool",
+        "primaryBenefit": "Extends up to 30 inches with an LED light to retrieve dropped screws in dark spaces.",
+        "easeOfUse": "Easy",
+        "findIt": "Hardware counter or auto parts store",
+        "img": "images/magnetic-pickup.webp"
+    }
+]
