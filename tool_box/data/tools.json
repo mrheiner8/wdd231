@@ -19,18 +19,18 @@
     },
     {
         "id": "tool-03",
-        "name": "Magnetic Stud Finder",
+        "name": "Stud and Wire Finder",
         "category": "Hand Tool",
-        "primaryBenefit": "Locates wall studs instantly using powerful rare-earth magnets without batteries.",
-        "easeOfUse": "Very Easy",
+        "primaryBenefit": "Locates wall studs instantly and wiring hidden in the walls.",
+        "easeOfUse": "Easy",
         "findIt": "Hardware aisle or tool center",
         "img": "images/magnetic-stud-finder.webp"
     },
     {
         "id": "tool-04",
-        "name": "Silicone Garlic Peeler Roller",
+        "name": "Silicone Microwave Popcorn Popper",
         "category": "Kitchen",
-        "primaryBenefit": "Removes garlic cloves from skin in seconds simply by rolling on the counter.",
+        "primaryBenefit": "Pops Popcorn in the microwave oven without oil.",
         "easeOfUse": "Very Easy",
         "findIt": "Kitchen gadgets aisle or grocery stores",
         "img": "images/garlic-peeler.webp"
