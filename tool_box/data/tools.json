@@ -6,7 +6,8 @@
         "primaryBenefit": "Screw or unscrew without having to reposition your hand grip continuously.",
         "easeOfUse": "Easy",
         "findIt": "Hardware section or local home improvement store",
-        "img": "images/ratcheting-screwdriver.webp"
+        "longDescription": "A ratcheting screwdriver features a built-in mechanical mechanism that allows the shaft to turn freely in one direction while locking in the other. This lets you drive screws quickly and efficiently in tight spaces without ever needing to lift or adjust your grip on the handle.",
+        "img": "images/ratcheting_screwdriver.webp"
     },
     {
         "id": "tool-02",
@@ -15,123 +16,147 @@
         "primaryBenefit": "Grates block cheese quickly and safely without risk of scraping fingers.",
         "easeOfUse": "Easy",
         "findIt": "Kitchenware aisle or cooking specialty shop",
-        "img": "images/rotary-cheese-grater.webp"
+        "longDescription": "Using a rotating drum design and a safety pusher handle, this grater keeps your fingers entirely away from sharp blades. It makes short work of hard cheeses, nuts, and vegetables while producing uniform shreds for cooking or garnishing.",
+        "img": "images/rotary_cheese_grater.webp"
     },
     {
         "id": "tool-03",
         "name": "Stud and Wire Finder",
         "category": "Hand Tool",
-        "primaryBenefit": "Locates wall studs instantly and wiring hidden in the walls.",
+        "primaryBenefit": "Locates wall studs and wiring hidden in the walls.",
         "easeOfUse": "Easy",
         "findIt": "Hardware aisle or tool center",
-        "img": "images/magnetic-stud-finder.webp"
+        "longDescription": "This electronic wall scanner uses advanced sensor technology to detect wooden studs, metal pipes, and live AC electrical wiring behind drywall. It prevents accidental wall damage and ensures secure mounting for heavy shelves, TVs, and wall art.",
+        "img": "images/stud_finder.webp"
     },
     {
         "id": "tool-04",
         "name": "Silicone Microwave Popcorn Popper",
         "category": "Kitchen",
-        "primaryBenefit": "Pops Popcorn in the microwave oven without oil.",
+        "primaryBenefit": "Pops popcorn in the microwave oven without oil.",
         "easeOfUse": "Very Easy",
         "findIt": "Kitchen gadgets aisle or grocery stores",
-        "img": "images/garlic-peeler.webp"
+        "longDescription": "Made from heat-resistant, food-grade silicone, this collapsible bowl lets you pop healthy, oil-free snacks in minutes using only raw kernels. It features built-in handles and collapses flat for compact storage in crowded kitchen cabinets.",
+        "img": "images/popcorn_popper.webp"
     },
     {
         "id": "tool-05",
-        "name": "Contour Gauge Duplicator",
-        "category": "Hand Tool",
-        "primaryBenefit": "Copies irregular shapes and profiles easily for precise tile or flooring cuts.",
+        "name": "Robot Vacuum",
+        "category": "Small Appliances",
+        "primaryBenefit": "Automates daily floor cleaning on a scheduled timer.",
         "easeOfUse": "Moderate",
-        "findIt": "Flooring or carpentry department",
-        "img": "images/contour-gauge.webp"
+        "findIt": "Vacuum aisle",
+        "longDescription": "A robotic vacuum cleaner navigates across carpets and hard floors independently, sweeping up dust, pet hair, and debris. Most models feature automatic dock recharging and smartphone app integration so you can set custom cleaning schedules while away.",
+        "img": "images/robot_vacuum.webp"
     },
     {
         "id": "tool-06",
-        "name": "Herb Scissors with 5 Blades",
-        "category": "Kitchen",
-        "primaryBenefit": "Chops fresh herbs directly into pans or salads quickly with uniform cuts.",
-        "easeOfUse": "Easy",
-        "findIt": "Kitchen supply or culinary aisle",
-        "img": "images/herb-scissors.webp"
+        "name": "Saxophone Key Props",
+        "category": "Musical Instrument",
+        "primaryBenefit": "Saves instrument pads from sticking while in storage.",
+        "easeOfUse": "Very Easy",
+        "findIt": "Music Store",
+        "longDescription": "Saxophone key props hold up specific spring-loaded keys (such as the G#, Low C#, and Low B) open while the instrument is resting in its case. This simple precaution prevents leather pads from sticking to tone holes due to accumulated moisture, extending pad lifespan.",
+        "img": "images/key_props.webp"
     },
     {
         "id": "tool-07",
-        "name": "Self-Leveling Laser Level",
-        "category": "Hand Tool",
-        "primaryBenefit": "Projects perfectly straight laser lines on walls for hanging pictures or shelves.",
-        "easeOfUse": "Moderate",
-        "findIt": "Tool department or measuring section",
-        "img": "images/laser-level.webp"
+        "name": "Battery Storage",
+        "category": "Storage",
+        "primaryBenefit": "Organizes and tests household batteries in one secure container.",
+        "easeOfUse": "Very Easy",
+        "findIt": "Battery Aisle",
+        "longDescription": "A dedicated battery storage organizer keeps loose AA, AAA, C, D, and 9-volt batteries neatly sorted and protected from terminal contact. Many organizers include a removable battery tester gauge so you can instantly check remaining power levels before tossing them out.",
+        "img": "images/battery_storage.webp"
     },
     {
         "id": "tool-08",
-        "name": "Adjustable Jar Opener Clamp",
-        "category": "Kitchen",
-        "primaryBenefit": "Leverages tight jar lids open with minimal hand strength required.",
-        "easeOfUse": "Easy",
-        "findIt": "Kitchen gadgets or accessibility aid section",
-        "img": "images/jar-opener.webp"
+        "name": "Electric Screwdriver",
+        "category": "Hand Tool",
+        "primaryBenefit": "Screws or unscrews fasteners quickly with motor-driven power.",
+        "easeOfUse": "Moderate",
+        "findIt": "Power tool aisle",
+        "longDescription": "Designed for repetitive fastening tasks, a compact electric screwdriver drives long screws or tight threads effortlessly with the press of a button. Note that it is recommended for running screws down, but final tightening should be done by hand to avoid stripping screw heads.",
+        "img": "images/electric_screwdriver.webp"
     },
     {
         "id": "tool-09",
-        "name": "Flexible Extension Bit Holder",
-        "category": "Hand Tool",
-        "primaryBenefit": "Bends and twists to allow screwdrivers or drills to reach tight, awkward corners.",
-        "easeOfUse": "Moderate",
-        "findIt": "Drill accessories section at hardware stores",
-        "img": "images/flexible-extension.webp"
+        "name": "Phone Holder",
+        "category": "Storage",
+        "primaryBenefit": "Mounts your smartphone securely on the wall so you never misplace it.",
+        "easeOfUse": "Easy",
+        "findIt": "Home organization section",
+        "longDescription": "A wall-mounted phone holder provides a designated charging or storage station near outlets or desks. It keeps devices off messy counter surfaces and makes it easy to view recipes, videos, or incoming notifications from across the room.",
+        "img": "images/phone_holder.webp"
     },
     {
         "id": "tool-10",
-        "name": "Avocado Slicer 3-in-1",
-        "category": "Kitchen",
-        "primaryBenefit": "Splits, pips, and slices avocados cleanly and safely in one tool.",
+        "name": "Plastic Scraper",
+        "category": "Hand Tool",
+        "primaryBenefit": "Removes stickers, paint, and residue without scratching delicate surfaces.",
         "easeOfUse": "Easy",
-        "findIt": "Kitchenware department or supermarket gadget rack",
-        "img": "images/avocado-slicer.webp"
+        "findIt": "With other scrapers",
+        "longDescription": "Unlike metal razor blades that easily gouge glass, wood, or ceramic stovetops, a heavy-duty plastic scraper uses durable polymer edges to pry off stubborn labels, dried glue, and wax safely without permanent surface damage.",
+        "img": "images/plastic_scraper.webp"
     },
     {
         "id": "tool-11",
-        "name": "Universal Socket Grip",
-        "category": "Hand Tool",
-        "primaryBenefit": "Adjusts instantly to grip hex nuts, hooks, and rusted fasteners of various sizes.",
-        "easeOfUse": "Easy",
-        "findIt": "Tool aisle or hardware gifts section",
-        "img": "images/universal-socket.webp"
+        "name": "Plug Angle Adapter",
+        "category": "Electrical",
+        "primaryBenefit": "Changes cord direction to allow furniture to sit flush against wall outlets.",
+        "easeOfUse": "Very Easy",
+        "findIt": "Electrical department",
+        "longDescription": "A plug angle adapter alters the entry angle of bulky power cords, directing wires flat against the wall. This clever fix lets beds, couches, and heavy furniture push all the way back against baseboards without pinching or bending power cables.",
+        "img": "images/plug_adapter.webp"
     },
     {
         "id": "tool-12",
-        "name": "Meat Claws Shredder",
-        "category": "Kitchen",
-        "primaryBenefit": "Shreds pork, chicken, or beef effortlessly without melting or bending.",
+        "name": "Light and Motion Sensor Lightbulb",
+        "category": "Lighting",
+        "primaryBenefit": "Turns on automatically only in the dark when motion is sensed.",
         "easeOfUse": "Easy",
-        "findIt": "BBQ & grilling aisle or kitchen supply store",
-        "img": "images/meat-claws.webp"
+        "findIt": "Light aisle",
+        "longDescription": "Equipped with dual ambient light and infrared motion sensors, this smart bulb eliminates manual wall switch toggling for outdoor porches, hallways, or garages. It stays dark during daylight hours, activates instantly when movement is detected after sunset, and powers down automatically after two minutes.",
+        "img": "images/sensor_lightbulb.webp"
     },
     {
         "id": "tool-13",
-        "name": "Automatic Wire Stripper",
-        "category": "Hand Tool",
-        "primaryBenefit": "Strips wire insulation cleanly in a single squeeze without cutting internal strands.",
-        "easeOfUse": "Moderate",
-        "findIt": "Electrical tools section",
-        "img": "images/wire-stripper.webp"
+        "name": "Soft Close Toilet Seat",
+        "category": "Plumbing",
+        "primaryBenefit": "Lowers the seat and lid quietly to prevent loud slamming noises.",
+        "easeOfUse": "Easy",
+        "findIt": "Plumbing or bathroom aisle",
+        "longDescription": "Featuring integrated hydraulic dampers in the hinges, a soft-close toilet seat lowers smoothly and silently with a gentle tap. It protects porcelain bowls from impact damage and prevents sudden nighttime noises in busy households.",
+        "img": "images/softclose_toiletseat.webp"
     },
     {
         "id": "tool-14",
-        "name": "Oil Splatter Screen Guard",
-        "category": "Kitchen",
-        "primaryBenefit": "Keeps hot oil from popping out of frying pans while letting steam escape.",
-        "easeOfUse": "Very Easy",
-        "findIt": "Cookware or frying accessories section",
-        "img": "images/splatter-screen.webp"
+        "name": "3-in-1 Wireless Charging Station",
+        "category": "Electronics",
+        "primaryBenefit": "Powers your smartphone, smartwatch, and wireless earbuds simultaneously.",
+        "easeOfUse": "Easy",
+        "findIt": "Electronics section",
+        "longDescription": "A multi-device wireless charging stand consolidates clutter by powering up your daily ecosystem using a single power cord. Its angled desktop orientation allows you to view incoming alerts on your phone while it charges securely.",
+        "img": "images/wireless_charging_station.webp"
     },
     {
         "id": "tool-15",
-        "name": "Telescoping Magnetic Pickup Tool",
+        "name": "Magnetic Wrist Band",
         "category": "Hand Tool",
-        "primaryBenefit": "Extends up to 30 inches with an LED light to retrieve dropped screws in dark spaces.",
+        "primaryBenefit": "Secures metal screws, nails, and drill bits right on your wrist while working.",
         "easeOfUse": "Easy",
-        "findIt": "Hardware counter or auto parts store",
-        "img": "images/magnetic-pickup.webp"
+        "findIt": "Hardware counter or tool section",
+        "longDescription": "Embedded with powerful neodymium magnets, this adjustable wrist strap holds fasteners, washers, and small metal tools within arm's reach. It eliminates the frustration of dropping hardware or constantly reaching down into a tool pouch while working on ladders or tight spaces.",
+        "img": "images/magnetic_wristband.webp"
+    },
+    {
+        "id": "tool-16",
+        "name": "Portable Speaker",
+        "category": "Audio",
+        "primaryBenefit": "Streams wireless music anywhere with a durable, rechargeable battery.",
+        "easeOfUse": "Moderate",
+        "findIt": "Electronics section",
+        "longDescription": "A compact Bluetooth portable speaker pairs wirelessly with phones or tablets to deliver rich audio playback outdoors, in workshops, or during home projects. Built with rugged weather-resistant housing, it delivers hours of playback on a single USB charge.",
+        "img": "images/portable_speaker.webp"
     }
 ]
