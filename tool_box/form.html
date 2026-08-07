@@ -25,6 +25,8 @@
     <link rel="icon" href="favicon.ico">
     <!-- Java Script -->
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <!-- Google Fonts: Acme and Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,8 +46,57 @@
             <li class="active"><a href="#">Add a Tool to the Box</a></li>
         </ul>
     </nav>
-    <main>
-    </main>
+<main>
+    <h1>Add a Tool to the Box</h1>
+    <div id="join">
+        <form method="GET" action="thankyou.html" class="designOne">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>First Name: <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+
+                <label>Last Name: <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+
+                <label>Email: <input type="email" name="email" required placeholder="john89@gmail.com"
+                        title="Your Email" autocomplete="email"></label>
+
+                <label>Mobile Phone Number: <input type="tel" name="phone" required autocomplete="tel"
+                        title="A Phone Number with dashes" placeholder="719-555-1234"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Tool Information</legend>
+                <label>Name of Tool: <input type="text" name="tool_name" required
+                        title="Name of Tool"></label>
+
+                <label>Category: <input type="text" name="category" required title="Category"></label>
+        
+                <label>Primary Benefit: <textarea name="primaryBenefit" required title="Tool Description"></textarea></label>
+
+                <label>Tool Description: <textarea name="Description" required
+                        title="Tool Description"></textarea></label>
+
+                <label>Where to Find This Tool: <input type="text" name="findIt" required title="Where to Find This Tool"></label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Ease of Use</legend>
+
+                <label><input type="radio" name="ease_of_use" value="very_easy"> Very Easy</label>
+
+                <label><input type="radio" name="ease_of_use" value="easy"> Easy</label>
+
+                <label><input type="radio" name="ease_of_use" value="moderate"> Moderate</label>
+
+                <label><input type="radio" name="ease_of_use" value="difficult" checked> Difficult</label>
+            </fieldset>
+            <input type="hidden" name="timeStamp" id="timeStamp">
+
+            <input id="submit" type="submit" value="Add Tool">
+        </form>
+        
+    </div>
+</main>
 
     <footer>
         <div>
