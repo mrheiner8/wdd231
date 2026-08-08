@@ -1,3 +1,4 @@
+// directory.js
 const url = 'data/members.json';
 const membersContainer = document.querySelector('#members');
 
@@ -73,3 +74,4 @@ function showList() {
     listbutton.classList.add("active");
     gridbutton.classList.remove("active");
 }
+//End directory.js

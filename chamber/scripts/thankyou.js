@@ -1,3 +1,4 @@
+//---thankyou.js
 // double line/const method
 const getString = window.location.search;
 console.log(getString);
@@ -53,3 +54,4 @@ document.querySelector('#mem-application').innerHTML = `
 
 <p><strong>Application Received:</strong> ${(myInfo.get('timeStamp'))}</p>
 `
+//--- End thankyou.js

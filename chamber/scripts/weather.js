@@ -1,4 +1,5 @@
-const currentWeather =document.querySelector('#current-weather')
+// weather.js
+const currentWeather = document.querySelector('#current-weather')
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const forecastCards = document.querySelector('#forecast-cards');
@@ -88,3 +89,4 @@ function displayForecast(data) {
 
     })
 }
+//End weather.js

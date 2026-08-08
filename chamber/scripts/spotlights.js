@@ -1,3 +1,4 @@
+// spotlights.js
 const url = 'data/members.json';
 const spotlightsContainer = document.querySelector('#spotlights');
 
@@ -60,3 +61,4 @@ const displayMembers = (members) => {
         spotlightsContainer.appendChild(card);
     });
 }
+// End spotlights.js

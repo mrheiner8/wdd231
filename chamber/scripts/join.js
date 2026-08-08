@@ -1,3 +1,4 @@
+//--- join.js
 // set up Const
 const formLoadedTime = new Date();
 const timeStamp = document.querySelector("#timeStamp");
@@ -50,3 +51,4 @@ closeSilver.addEventListener("click", () => {
 closeGold.addEventListener("click", () => {
     modalGold.close();
 });
+//--- End join.js
