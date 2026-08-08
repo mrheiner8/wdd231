@@ -27,6 +27,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/welcome.js" defer></script>
+    <script src="scripts/featured.js" defer></script>
     <!-- Google Fonts: Acme and Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +38,8 @@
 
     <header>
         <img src="images/logo.svg" alt="SmartToolbox Logo" class="logo">
-        <h1>SmartToolbox</h1>
+        <span class="sr-only">Smart Toolbox</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
@@ -51,27 +53,21 @@
         <p id="welcome"></p>
         <section class="hero">
             <h2 class="sr-only">Add a Tool to the Box</h2>
-            <img src="#" alt="#" width="1600" height="900" loading="eager">
+            <img src="images/hero-modern-maker.webp"
+                alt="A well-organized workbench featuring a modern multi-tool in the foreground, representing efficient and clever home repairs."
+                width="1600" height="900" loading="eager">
             <div class="action-area">
                 <a href="form.html" id="cta-button">Add a Tool to the Box</a>
             </div>
         </section>
         <section class="about_us">
             <article>
-                <h2>Mission statment</h2>
-                <p>Synergy pipeline leverage bandwidth blue-sky waterfall matrix iterate scalable paradigm game-changer
-                    touchpoint.
-                    Agile blockchain deliverables paradigm workflow onboarding hyper-growth matrix monetization key
-                    performance
-                    indicators ideation ecosystem deliverables. Disruptive bandwidth deliverables hyper-growth ecosystem
-                    onboarding
-                    hyper-growth matrix.</p>
+                <h2>Mission statement</h2>
+                <p>At SmartToolbox, we know that the right tools—even something as simple as a rotary cheese grater—can transform your day.
+                Our mission is to empower busy households by curating an interactive directory of practical, time-saving gadgets.</p>
 
-                <p>Ecosystem infrastructure bandwidth deliverables hyper-growth architecture agile workflow onboarding
-                    hyper-growth
-                    matrix monetization scalable. Disruptive paradigm monetization ecosystem deliverables bandwidth
-                    hyper-growth
-                    architecture onboarding hyper-growth matrix deliverables runway deliverables monetization.</p>
+                <p>Through community-driven submissions, we share the best everyday solutions to make life vastly easier and more efficient
+                for families everywhere.</p>
 
             </article>
 

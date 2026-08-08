@@ -7,7 +7,10 @@ async function getToolsData() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            displayTools(data);
+            //slice only a few tools featured tools on the home page.
+            const shuffled = data.sort(() => 0.5 - Math.random());
+            const featuredTools = shuffled.slice(0, 3);
+            displayTools(featuredTools);
         } else {
             console.error("HTTP-ERROR: " + response.status);
         }
@@ -19,38 +22,36 @@ async function getToolsData() {
 getToolsData();
 
 
-const displayfeatured = (members) => {
-    members.forEach((member) => {
+const displayTools = (tools) => {
+    tools.forEach((tool) => {
         let card = document.createElement("section");
-        let companyName = document.createElement("h2");
-        let location = document.createElement("p");
-        let pNumber = document.createElement("p");
-        let years = document.createElement("p");
-        let site = document.createElement("a");
+        let toolName = document.createElement("h2");
+        let primaryBenefit = document.createElement("p");
+        let easeOfUse = document.createElement("p");
+        let category = document.createElement("p");
         let picture = document.createElement("img");
 
 
-        companyName.textContent = `${member.company}`;
-        years.innerHTML = `<strong>${member.years} Years of Business in Colorado Springs</strong>`;
-        location.innerHTML = `<strong>Address:</strong> ${member.address}`;
-        pNumber.innerHTML = `<strong>Phone Number:</strong> ${member.phone}`;
-        site.textContent = `${member.url}`;
+        toolName.textContent = tool.name;
+        category.innerHTML = `<strong>Category:</strong> ${tool.category}`;
+        primaryBenefit.innerHTML = `<strong>Primary Benefit:</strong> ${tool.primaryBenefit}`;
+        easeOfUse.innerHTML = `<strong>Ease Of Use:</strong> ${tool.easeOfUse}`;
+   
 
-        site.setAttribute('href', member.url);
-
-        picture.setAttribute('src', `images/${member.imagefile}`);
-        picture.setAttribute('alt', `Picture of ${member.company}`);
+        picture.setAttribute('src', tool.img);
+        picture.setAttribute('alt', tool.alt);
         picture.setAttribute('width', '300');
         picture.setAttribute('height', '200');
 
-        card.appendChild(companyName);
-        card.appendChild(years);
+        card.appendChild(toolName);
         card.appendChild(picture);
-        card.appendChild(location);
-        card.appendChild(pNumber);
-        card.appendChild(site);
+        card.appendChild(category);
+        card.appendChild(primaryBenefit);
+        card.appendChild(easeOfUse);
 
-        spotlightsContainer.appendChild(card);
+        toolsContainer.appendChild(card);
     });
 }
 //---- End featured.js
+
+                            
